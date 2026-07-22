@@ -1,0 +1,505 @@
+[
+ {
+  "id": 1,
+  "nombre": "nuevo → en_diagnostico: el lead cuenta su dolor",
+  "lead": {
+   "remote_jid": "51888000001@s.whatsapp.net",
+   "nombre": null,
+   "estado": "nuevo",
+   "tipo_objecion": null,
+   "servicio_interes": null,
+   "con_especialista": false,
+   "contador_noshow": 0,
+   "proxima_cita": null,
+   "notas": null,
+   "ultimo_emisor": "cliente"
+  },
+  "historial": [
+   {
+    "rol": "vendedor",
+    "texto": "¡Hola! Bienvenida a *DermicaPro* 😊 ¿Qué te gustaría tratarte?"
+   },
+   {
+    "rol": "cliente",
+    "texto": "Tengo unas manchas en los cachetes desde mi embarazo y no se me quitan con nada"
+   }
+  ],
+  "checks": {
+   "estado_esperado": "en_diagnostico"
+  }
+ },
+ {
+  "id": 2,
+  "nombre": "en_diagnostico → calificado: 3 luces verdes (dolor + filtro + decide)",
+  "lead": {
+   "remote_jid": "51888000002@s.whatsapp.net",
+   "nombre": null,
+   "estado": "en_diagnostico",
+   "tipo_objecion": null,
+   "servicio_interes": "Ácido Tranexámico",
+   "con_especialista": false,
+   "contador_noshow": 0,
+   "proxima_cita": null,
+   "notas": "Melasma de 2 años, frustrada con cremas.",
+   "ultimo_emisor": "cliente"
+  },
+  "historial": [
+   {
+    "rol": "cliente",
+    "texto": "¿Y más o menos cuánto está el tratamiento para las manchas?"
+   },
+   {
+    "rol": "vendedor",
+    "texto": "Va desde S/ 300 por sesión según tu plan exacto 😊 Y para cuidarte: ¿estás embarazada o dando de lactar? ¿Tomas anticoagulantes?"
+   },
+   {
+    "rol": "cliente",
+    "texto": "No, nada de eso. Ya quiero resolverlo de una vez, dime qué hago"
+   }
+  ],
+  "checks": {
+   "estado_esperado": "calificado"
+  }
+ },
+ {
+  "id": 3,
+  "nombre": "calificado → oferta_presentada: el VENDEDOR envió la propuesta concreta",
+  "lead": {
+   "remote_jid": "51888000003@s.whatsapp.net",
+   "nombre": "Ana",
+   "estado": "calificado",
+   "tipo_objecion": null,
+   "servicio_interes": "Ácido Tranexámico",
+   "con_especialista": false,
+   "contador_noshow": 0,
+   "proxima_cita": null,
+   "notas": "Calificada, sin contraindicaciones.",
+   "ultimo_emisor": "vendedor"
+  },
+  "historial": [
+   {
+    "rol": "cliente",
+    "texto": "Ya pues, mándame el plan"
+   },
+   {
+    "rol": "vendedor",
+    "texto": "Listo Ana, tu plan 👇\n✅ *Ácido Tranexámico* — pack de 3 sesiones\n✅ Control de revisión incluido\nSueltas serían ~S/ 900~, tu pack queda en *S/ 800*.\nCon *S/ 50 de adelanto* te separo tu primera cita 😊 ¿Entre semana o sábado?"
+   }
+  ],
+  "checks": {
+   "estado_esperado": "oferta_presentada"
+  }
+ },
+ {
+  "id": 4,
+  "nombre": "oferta → en_objecion CONCRETO: 'está caro'",
+  "lead": {
+   "remote_jid": "51888000004@s.whatsapp.net",
+   "nombre": null,
+   "estado": "oferta_presentada",
+   "tipo_objecion": null,
+   "servicio_interes": "HIFU",
+   "con_especialista": false,
+   "contador_noshow": 0,
+   "proxima_cita": null,
+   "notas": "Oferta HIFU rostro+papada presentada.",
+   "ultimo_emisor": "cliente"
+  },
+  "historial": [
+   {
+    "rol": "cliente",
+    "texto": "Uy no, está muy caro, en otro lado me cobran la mitad"
+   }
+  ],
+  "checks": {
+   "estado_esperado": "en_objecion",
+   "tipo_objecion_esperado": "concreto"
+  }
+ },
+ {
+  "id": 5,
+  "nombre": "oferta → en_objecion INDECISIÓN: 'lo voy a pensar'",
+  "lead": {
+   "remote_jid": "51888000005@s.whatsapp.net",
+   "nombre": null,
+   "estado": "oferta_presentada",
+   "tipo_objecion": null,
+   "servicio_interes": "Hollywood Peel",
+   "con_especialista": false,
+   "contador_noshow": 0,
+   "proxima_cita": null,
+   "notas": "Oferta pack de 3 presentada.",
+   "ultimo_emisor": "cliente"
+  },
+  "historial": [
+   {
+    "rol": "cliente",
+    "texto": "Mmm ya... déjame pensarlo y te aviso ¿ya?"
+   }
+  ],
+  "checks": {
+   "estado_esperado": "en_objecion",
+   "tipo_objecion_esperado": "indecision"
+  }
+ },
+ {
+  "id": 6,
+  "nombre": "TRAMPA · señal de compra SIN adelanto → SIGUE oferta_presentada (jamás agendado)",
+  "lead": {
+   "remote_jid": "51888000006@s.whatsapp.net",
+   "nombre": null,
+   "estado": "oferta_presentada",
+   "tipo_objecion": null,
+   "servicio_interes": "HIFU",
+   "con_especialista": false,
+   "contador_noshow": 0,
+   "proxima_cita": null,
+   "notas": "Oferta presentada.",
+   "ultimo_emisor": "cliente"
+  },
+  "historial": [
+   {
+    "rol": "cliente",
+    "texto": "Ya me convenciste 😍 resérvame el sábado a las 11 porfa"
+   }
+  ],
+  "checks": {
+   "estado_esperado": "oferta_presentada",
+   "estado_prohibido": [
+    "agendado"
+   ]
+  }
+ },
+ {
+  "id": 7,
+  "nombre": "adelanto CONFIRMADO → agendado + proxima_cita en ISO",
+  "lead": {
+   "remote_jid": "51888000007@s.whatsapp.net",
+   "nombre": "Rosa",
+   "estado": "oferta_presentada",
+   "tipo_objecion": null,
+   "servicio_interes": "Depilación Láser",
+   "con_especialista": false,
+   "contador_noshow": 0,
+   "proxima_cita": null,
+   "notas": "Aceptó pack de axilas.",
+   "ultimo_emisor": "vendedor"
+  },
+  "historial": [
+   {
+    "rol": "cliente",
+    "texto": "Listo, ya te yapeé los 50 soles ✅"
+   },
+   {
+    "rol": "vendedor",
+    "texto": "¡Recibido Rosa! 🎉 Tu cita quedó para el *sábado 25 de julio, 11:00 am*. Te espero en Av. Víctor Larco 877 📍"
+   }
+  ],
+  "checks": {
+   "estado_esperado": "agendado",
+   "proxima_cita_requerida": true
+  }
+ },
+ {
+  "id": 8,
+  "nombre": "ESTABILIDAD · agendado + reagendo → SIGUE agendado",
+  "lead": {
+   "remote_jid": "51888000008@s.whatsapp.net",
+   "nombre": null,
+   "estado": "agendado",
+   "tipo_objecion": null,
+   "servicio_interes": "Limpieza Facial",
+   "con_especialista": false,
+   "contador_noshow": 0,
+   "proxima_cita": "2026-07-27T15:00:00-05:00",
+   "notas": "Cita lunes 27, 3 pm, adelanto pagado.",
+   "ultimo_emisor": "cliente"
+  },
+  "historial": [
+   {
+    "rol": "cliente",
+    "texto": "Hola! no podré el lunes, ¿lo pasamos para el miércoles a la misma hora porfa?"
+   }
+  ],
+  "checks": {
+   "estado_esperado": "agendado"
+  }
+ },
+ {
+  "id": 9,
+  "nombre": "agendado → cliente_activo: asistió a su sesión",
+  "lead": {
+   "remote_jid": "51888000009@s.whatsapp.net",
+   "nombre": "Lucía",
+   "estado": "agendado",
+   "tipo_objecion": null,
+   "servicio_interes": "Hollywood Peel",
+   "con_especialista": false,
+   "contador_noshow": 0,
+   "proxima_cita": null,
+   "notas": "Pack de 3 de Hollywood Peel; ayer asistió a su 1.ª sesión (quedan 2).",
+   "ultimo_emisor": "cliente"
+  },
+  "historial": [
+   {
+    "rol": "vendedor",
+    "texto": "¡Hola Lucía! ¿Cómo te fue ayer en tu primera sesión? ¿Cómo sientes la piel? 😊"
+   },
+   {
+    "rol": "cliente",
+    "texto": "Me encantó!! La piel me quedó suavecita, gracias 😍 nos vemos en la siguiente"
+   }
+  ],
+  "checks": {
+   "estado_esperado": "cliente_activo"
+  }
+ },
+ {
+  "id": 10,
+  "nombre": "TRAMPA · cliente_activo pregunta por OTRO servicio → SIGUE cliente_activo + servicio actualizado",
+  "lead": {
+   "remote_jid": "51888000010@s.whatsapp.net",
+   "nombre": "María",
+   "estado": "cliente_activo",
+   "tipo_objecion": null,
+   "servicio_interes": "Depilación Láser",
+   "con_especialista": false,
+   "contador_noshow": 0,
+   "proxima_cita": "2026-08-02T11:00:00-05:00",
+   "notas": "Pack de axilas 2/6.",
+   "ultimo_emisor": "cliente"
+  },
+  "historial": [
+   {
+    "rol": "cliente",
+    "texto": "Oye, ¿y el botox cuánto está? Me interesa para mi frente"
+   }
+  ],
+  "checks": {
+   "estado_esperado": "cliente_activo",
+   "estado_prohibido": [
+    "nuevo",
+    "en_diagnostico"
+   ],
+   "servicio_contiene": "otox"
+  }
+ },
+ {
+  "id": 12,
+  "nombre": "en_seguimiento responde con freno (tenía oferta) → en_objecion",
+  "lead": {
+   "remote_jid": "51888000012@s.whatsapp.net",
+   "nombre": null,
+   "estado": "en_seguimiento",
+   "tipo_objecion": null,
+   "servicio_interes": "Hollywood Peel",
+   "con_especialista": false,
+   "contador_noshow": 0,
+   "proxima_cita": null,
+   "notas": "Oferta del pack presentada hace 4 días; sin respuesta.",
+   "ultimo_emisor": "cliente"
+  },
+  "historial": [
+   {
+    "rol": "vendedor",
+    "texto": "Te dejo un resultado real de una clienta que empezó igual que tú ✨"
+   },
+   {
+    "rol": "cliente",
+    "texto": "Es que sí me interesa pero está carito para mí ahorita"
+   }
+  ],
+  "checks": {
+   "estado_esperado": "en_objecion",
+   "tipo_objecion_esperado": "concreto"
+  }
+ },
+ {
+  "id": 13,
+  "nombre": "en_seguimiento responde (nunca vio oferta) → en_diagnostico",
+  "lead": {
+   "remote_jid": "51888000013@s.whatsapp.net",
+   "nombre": null,
+   "estado": "en_seguimiento",
+   "tipo_objecion": null,
+   "servicio_interes": "Depilación Láser",
+   "con_especialista": false,
+   "contador_noshow": 0,
+   "proxima_cita": null,
+   "notas": "Se quedó en diagnóstico; nunca recibió oferta.",
+   "ultimo_emisor": "cliente"
+  },
+  "historial": [
+   {
+    "rol": "vendedor",
+    "texto": "¡Hola! Me quedé pensando en lo que me contabas 😊 ¿Sigue en pie la idea?"
+   },
+   {
+    "rol": "cliente",
+    "texto": "Sí sí, disculpa que desaparecí. Te decía que quiero para piernas y axilas"
+   }
+  ],
+  "checks": {
+   "estado_esperado": "en_diagnostico"
+  }
+ },
+ {
+  "id": 14,
+  "nombre": "lactancia con plazo → descalificado + razon + fecha_recontacto",
+  "lead": {
+   "remote_jid": "51888000014@s.whatsapp.net",
+   "nombre": null,
+   "estado": "en_diagnostico",
+   "tipo_objecion": null,
+   "servicio_interes": "Ácido Tranexámico",
+   "con_especialista": false,
+   "contador_noshow": 0,
+   "proxima_cita": null,
+   "notas": null,
+   "ultimo_emisor": "cliente"
+  },
+  "historial": [
+   {
+    "rol": "cliente",
+    "texto": "Uy, estoy dando de lactar hasta noviembre más o menos, ¿hay problema?"
+   }
+  ],
+  "checks": {
+   "estado_esperado": "descalificado",
+   "razon_requerida": true,
+   "fecha_recontacto_contiene": "2026-11"
+  }
+ },
+ {
+  "id": 15,
+  "nombre": "'ya no me escriban' → baja (prioridad máxima)",
+  "lead": {
+   "remote_jid": "51888000015@s.whatsapp.net",
+   "nombre": null,
+   "estado": "en_seguimiento",
+   "tipo_objecion": null,
+   "servicio_interes": "HIFU",
+   "con_especialista": false,
+   "contador_noshow": 0,
+   "proxima_cita": null,
+   "notas": "En cadencia de seguimiento.",
+   "ultimo_emisor": "cliente"
+  },
+  "historial": [
+   {
+    "rol": "cliente",
+    "texto": "Ya no me manden más mensajes por favor, gracias"
+   }
+  ],
+  "checks": {
+   "estado_esperado": "baja"
+  }
+ },
+ {
+  "id": 16,
+  "nombre": "'ya me lo hice en otra clínica' tras oferta → perdido + razón",
+  "lead": {
+   "remote_jid": "51888000016@s.whatsapp.net",
+   "nombre": null,
+   "estado": "en_seguimiento",
+   "tipo_objecion": null,
+   "servicio_interes": "Hollywood Peel",
+   "con_especialista": false,
+   "contador_noshow": 0,
+   "proxima_cita": null,
+   "notas": "Oferta presentada hace 1 semana.",
+   "ultimo_emisor": "cliente"
+  },
+  "historial": [
+   {
+    "rol": "cliente",
+    "texto": "Gracias por la info pero ya me lo hice en otra clínica más cerca de mi casa"
+   }
+  ],
+  "checks": {
+   "estado_esperado": "perdido",
+   "razon_requerida": true
+  }
+ },
+ {
+  "id": 17,
+  "nombre": "'para diciembre mejor' → en_nutricion + fecha_recontacto",
+  "lead": {
+   "remote_jid": "51888000017@s.whatsapp.net",
+   "nombre": null,
+   "estado": "en_diagnostico",
+   "tipo_objecion": null,
+   "servicio_interes": "Depilación Láser",
+   "con_especialista": false,
+   "contador_noshow": 0,
+   "proxima_cita": null,
+   "notas": null,
+   "ultimo_emisor": "cliente"
+  },
+  "historial": [
+   {
+    "rol": "cliente",
+    "texto": "Mejor lo dejamos para diciembre que cobro mi grati, ahorita ando corta"
+   }
+  ],
+  "checks": {
+   "estado_esperado": "en_nutricion",
+   "fecha_recontacto_contiene": "2026-12"
+  }
+ },
+ {
+  "id": 18,
+  "nombre": "EXTRACCIÓN · nombre + teléfono dictado en el chat",
+  "lead": {
+   "remote_jid": "51888000018@s.whatsapp.net",
+   "nombre": null,
+   "estado": "en_diagnostico",
+   "tipo_objecion": null,
+   "servicio_interes": "Limpieza Facial",
+   "con_especialista": false,
+   "contador_noshow": 0,
+   "proxima_cita": null,
+   "notas": null,
+   "ultimo_emisor": "cliente"
+  },
+  "historial": [
+   {
+    "rol": "cliente",
+    "texto": "Soy Carmen por cierto 😊 y mejor escríbeme a mi otro número 955123456 que este casi no lo veo"
+   }
+  ],
+  "checks": {
+   "nombre_esperado": "Carmen",
+   "telefono_contiene": "955123456"
+  }
+ },
+ {
+  "id": 19,
+  "nombre": "pide hablar con la doctora (caso clínico) → con_especialista true",
+  "lead": {
+   "remote_jid": "51888000019@s.whatsapp.net",
+   "nombre": null,
+   "estado": "en_diagnostico",
+   "tipo_objecion": null,
+   "servicio_interes": "Botox",
+   "con_especialista": false,
+   "contador_noshow": 0,
+   "proxima_cita": null,
+   "notas": null,
+   "ultimo_emisor": "vendedor"
+  },
+  "historial": [
+   {
+    "rol": "cliente",
+    "texto": "Tengo hipotiroidismo y tomo levotiroxina, ¿puedo ponerme botox? Prefiero que me responda la doctora"
+   },
+   {
+    "rol": "vendedor",
+    "texto": "Esa consulta te la responde mejor nuestra especialista 😊 le paso tu caso y te escribe hoy mismo."
+   }
+  ],
+  "checks": {
+   "con_especialista_esperado": true
+  }
+ }
+]

@@ -1,0 +1,562 @@
+[
+ {
+  "texto": "[DermicaPro · Dolor del cliente y su solución: Tengo manchas en la cara\" / \"paño\" / \"melasma\" / \"manchas del sol o del embarazo]\n\n- **Afinar:** \"¿Notaste que salieron con el embarazo/hormonas, o más por el sol? ¿Hace cuánto?\"\n- **Solución:** melasma/hormonal → **Ácido tranexámico** · manchas superficiales y piel opaca → **Hollywood Peel** · fotodaño general → **Exosomas TRX**. La especialista confirma cuál en la evaluación.\n- **Clave:** sin protector solar diario la mancha vuelve — anticiparlo (gestiona expectativas y da autoridad).",
+  "metadata": {
+   "tipo": "dolor",
+   "titulo": "Tengo manchas en la cara\" / \"paño\" / \"melasma\" / \"manchas del sol o del embarazo",
+   "fuente": "negocio/mapa-dolores-soluciones.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Dolor del cliente y su solución: Ya probé cremas y las manchas no se van con nada]\n\n- **Solución:** **Ácido tranexámico** (el tratamiento de referencia para melasma resistente) en pack de 3.\n- **Venta:** su frustración es el argumento — \"las cremas trabajan en la superficie; esto trabaja donde se produce la mancha\".",
+  "metadata": {
+   "tipo": "dolor",
+   "titulo": "Ya probé cremas y las manchas no se van con nada",
+   "fuente": "negocio/mapa-dolores-soluciones.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Dolor del cliente y su solución: Tengo la piel grasa\" / \"me brilla la cara\" / \"poros abiertos]\n\n- **Solución:** **Hollywood Peel** (reduce la grasitud — se achican las glándulas sebáceas — y afina poros).\n- **Venta:** empezar por limpieza si duda; upgrade natural al HP (diferencia pequeña — precios en catálogo).",
+  "metadata": {
+   "tipo": "dolor",
+   "titulo": "Tengo la piel grasa\" / \"me brilla la cara\" / \"poros abiertos",
+   "fuente": "negocio/mapa-dolores-soluciones.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Dolor del cliente y su solución: Tengo puntos negros / granitos\" / \"quiero limpiarme el cutis\" / \"siento la piel congestionada]\n\n- **Solución:** **Limpieza facial** (7 pasos, incluye extracciones). Si además hay grasitud o manchas → Hollywood Peel.\n- **Ojo:** acné severo/quístico activo → evaluación con la especialista primero (no agendar directo).",
+  "metadata": {
+   "tipo": "dolor",
+   "titulo": "Tengo puntos negros / granitos\" / \"quiero limpiarme el cutis\" / \"siento la piel congestionada",
+   "fuente": "negocio/mapa-dolores-soluciones.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Dolor del cliente y su solución: Tengo marcas de acné\" / \"textura irregular\" / \"piel áspera]\n\n- **Solución:** marcas superficiales y textura → **Hollywood Peel** · regeneración más profunda → **Exosomas TRX**. Caso a confirmar por la especialista (las cicatrices profundas pueden requerir otro abordaje).",
+  "metadata": {
+   "tipo": "dolor",
+   "titulo": "Tengo marcas de acné\" / \"textura irregular\" / \"piel áspera",
+   "fuente": "negocio/mapa-dolores-soluciones.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Dolor del cliente y su solución: Me veo cansada\" / \"piel apagada, sin vida\" / \"quiero rejuvenecer]\n\n- **Solución (escalera por presupuesto):** Hollywood Peel (luminosidad inmediata) → ADN de salmón → Ácido tranexámico → Exosomas TRX → VTECH (premium). Precios en el catálogo.\n- **Venta:** para un evento cercano → HP (efecto inmediato); para cambio de fondo → regenerativos en pack de 3.",
+  "metadata": {
+   "tipo": "dolor",
+   "titulo": "Me veo cansada\" / \"piel apagada, sin vida\" / \"quiero rejuvenecer",
+   "fuente": "negocio/mapa-dolores-soluciones.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Dolor del cliente y su solución: Tengo ojeras\" / \"me veo trasnochada / demacrada]\n\n- **Solución:** **ADN de salmón** (el clásico para ojeras y piel fina).\n- **Aviso previo:** pueden quedar bolitas visibles 24-48 h (anticiparlo evita sustos).",
+  "metadata": {
+   "tipo": "dolor",
+   "titulo": "Tengo ojeras\" / \"me veo trasnochada / demacrada",
+   "fuente": "negocio/mapa-dolores-soluciones.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Dolor del cliente y su solución: Tengo la piel reseca / deshidratada]\n\n- **Solución:** **Hidratación con hialurónico rostro completo (dermapen)** · piel fina/dañada → ADN de salmón.",
+  "metadata": {
+   "tipo": "dolor",
+   "titulo": "Tengo la piel reseca / deshidratada",
+   "fuente": "negocio/mapa-dolores-soluciones.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Dolor del cliente y su solución: Tengo arrugas\" / \"líneas en la frente / entrecejo / patas de gallo]\n\n- **Afinar:** \"¿Se te marcan más cuando gesticulas o están ahí siempre?\"\n- **Solución:** arrugas de expresión → **Botox** (1, 2 o 3 zonas full face) · arrugas por flacidez/edad → HIFU o regenerativos.",
+  "metadata": {
+   "tipo": "dolor",
+   "titulo": "Tengo arrugas\" / \"líneas en la frente / entrecejo / patas de gallo",
+   "fuente": "negocio/mapa-dolores-soluciones.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Dolor del cliente y su solución: Me veo enojada / seria todo el tiempo\" / \"todos me preguntan si estoy molesta]\n\n- **Solución:** **Botox** de entrecejo (y frente) — es LA frase típica de ese dolor.",
+  "metadata": {
+   "tipo": "dolor",
+   "titulo": "Me veo enojada / seria todo el tiempo\" / \"todos me preguntan si estoy molesta",
+   "fuente": "negocio/mapa-dolores-soluciones.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Dolor del cliente y su solución: No quiero llegar a arrugarme\" / \"prevención\" (leads jóvenes)]\n\n- **Solución:** **Botox preventivo** según evaluación · calidad de piel a futuro → regenerativos (ADN, exosomas) · puerta de entrada → hidratación con hialurónico (el ticket de entrada).",
+  "metadata": {
+   "tipo": "dolor",
+   "titulo": "No quiero llegar a arrugarme\" / \"prevención\" (leads jóvenes)",
+   "fuente": "negocio/mapa-dolores-soluciones.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Dolor del cliente y su solución: Tengo la piel flácida\" / \"se me está cayendo la cara\" / \"quiero un lifting sin cirugía\" / \"mi mandíbula ya no se define]\n\n- **Solución:** **HIFU 12D** rostro + papada (promo vigente en catálogo; 1 vez al año) · definición del óvalo → **Puntos de anclaje**.",
+  "metadata": {
+   "tipo": "dolor",
+   "titulo": "Tengo la piel flácida\" / \"se me está cayendo la cara\" / \"quiero un lifting sin cirugía\" / \"mi mandíbula ya no se define",
+   "fuente": "negocio/mapa-dolores-soluciones.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Dolor del cliente y su solución: Quiero quitarme la papada\" / \"doble mentón\" / \"tengo papada aunque estoy delgada]\n\n- **Afinar:** \"¿Sientes que es más grasita acumulada o piel suelta/flácida?\" (la especialista lo confirma en consulta)\n- **Solución:** grasa → **Enzimas recombinantes** · flacidez → **HIFU** · si es por mentón retraído → **Mentomodelación** (lo define la evaluación). Son complementarios.",
+  "metadata": {
+   "tipo": "dolor",
+   "titulo": "Quiero quitarme la papada\" / \"doble mentón\" / \"tengo papada aunque estoy delgada",
+   "fuente": "negocio/mapa-dolores-soluciones.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Dolor del cliente y su solución: Quiero labios más bonitos pero sin relleno\" / \"labios resecos / partidos todo el año\" / \"el labial no me luce]\n\n- **Solución:** **Hidratación con ácido hialurónico (dermapen)** en labios — el ticket de entrada a inyectables (precio en catálogo). Aclarar: hidratación con volumen sutil natural, NO relleno.\n\n## CUERPO",
+  "metadata": {
+   "tipo": "dolor",
+   "titulo": "Quiero labios más bonitos pero sin relleno\" / \"labios resecos / partidos todo el año\" / \"el labial no me luce",
+   "fuente": "negocio/mapa-dolores-soluciones.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Dolor del cliente y su solución: Tengo mucho vello\" / \"me quiero depilar\" / \"vellos encarnados\" / \"me irrita la cera o rasurarme\" / \"no tengo tiempo para depilarme cada semana]\n\n- **Afinar:** \"¿Qué zonas te gustaría? ¿Y cómo te depilas ahora?\"\n- **Solución:** **Depilación láser tridiodo** (casi todo tipo de piel, incluidas morenas; ideal para foliculitis y vello encarnado).\n- **Venta:** costo recurrente de cera vs. pack de 6 al precio de 4 (2 sesiones gratis).",
+  "metadata": {
+   "tipo": "dolor",
+   "titulo": "Tengo mucho vello\" / \"me quiero depilar\" / \"vellos encarnados\" / \"me irrita la cera o rasurarme\" / \"no tengo tiempo para depilarme cada semana",
+   "fuente": "negocio/mapa-dolores-soluciones.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Dolor del cliente y su solución: Se me nota el bigotito\" / \"tengo vello en la cara\" (mujer)]\n\n- **Solución:** **Depilación láser de bozo, patillas o rostro completo** — tickets de entrada bajísimos, fáciles de cerrar. Existe combo bozo + bikini.",
+  "metadata": {
+   "tipo": "dolor",
+   "titulo": "Se me nota el bigotito\" / \"tengo vello en la cara\" (mujer)",
+   "fuente": "negocio/mapa-dolores-soluciones.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Dolor del cliente y su solución: Tengo las axilas oscuras\" / \"entrepierna oscura\" / \"manchas por rasurarme]\n\n- **Solución:** **Hollywood Peel de axilas** (aclarado) · si además hay vello/foliculitis (causa frecuente del oscurecimiento) → combinar con depilación láser de axilas.",
+  "metadata": {
+   "tipo": "dolor",
+   "titulo": "Tengo las axilas oscuras\" / \"entrepierna oscura\" / \"manchas por rasurarme",
+   "fuente": "negocio/mapa-dolores-soluciones.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Dolor del cliente y su solución: Tengo puntitos oscuros en las piernas\" (\"strawberry legs\")]\n\n- **Solución:** **Depilación láser de piernas** (el puntito ES el folículo/vello encarnado).",
+  "metadata": {
+   "tipo": "dolor",
+   "titulo": "Tengo puntitos oscuros en las piernas\" (\"strawberry legs\")",
+   "fuente": "negocio/mapa-dolores-soluciones.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Dolor del cliente y su solución: Tengo los brazos flácidos\" / \"alas de murciélago\" / \"me da vergüenza usar ropa sin mangas]\n\n- **Solución:** **HIFU de brazos** (ticket alto: nutrir con prueba social antes del precio).",
+  "metadata": {
+   "tipo": "dolor",
+   "titulo": "Tengo los brazos flácidos\" / \"alas de murciélago\" / \"me da vergüenza usar ropa sin mangas",
+   "fuente": "negocio/mapa-dolores-soluciones.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Dolor del cliente y su solución: Mi abdomen quedó flácido después del embarazo / de bajar de peso]\n\n- **Solución:** **HIFU de abdomen** (ticket alto). Aclarar: tensa la piel, NO reduce grasa (expectativa correcta = cliente satisfecho).\n- **⚠️ Si está en lactancia:** contraindicado — registrar fecha de recontacto.",
+  "metadata": {
+   "tipo": "dolor",
+   "titulo": "Mi abdomen quedó flácido después del embarazo / de bajar de peso",
+   "fuente": "negocio/mapa-dolores-soluciones.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Dolor del cliente y su solución: Tengo el cuello arrugado\" / \"cuello de pavo\" / \"escote con líneas]\n\n- **Solución:** **HIFU rostro + papada + cuello + escote** (existe también la variante solo hasta cuello) · superficial/oscurecimiento del cuello → Hollywood Peel de cuello.",
+  "metadata": {
+   "tipo": "dolor",
+   "titulo": "Tengo el cuello arrugado\" / \"cuello de pavo\" / \"escote con líneas",
+   "fuente": "negocio/mapa-dolores-soluciones.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Dolor del cliente y su solución: Tengo lunares / verruguitas que me molestan\" (cuello, axilas, roce con ropa o cadenas)]\n\n- **Solución:** **Remoción de lunares/acrocordones** (con anestesia local, en una sesión).\n- **Regla de seguridad:** lunar que cambió, sangra o es asimétrico → evaluación dermatológica primero, NUNCA remoción directa.\n\n## PERFIL Y ARMONIZACIÓN",
+  "metadata": {
+   "tipo": "dolor",
+   "titulo": "Tengo lunares / verruguitas que me molestan\" (cuello, axilas, roce con ropa o cadenas)",
+   "fuente": "negocio/mapa-dolores-soluciones.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Dolor del cliente y su solución: No me gusta mi nariz\" / \"mi giba\" / \"salgo mal en las fotos de perfil]\n\n- **Afinar:** \"¿Qué cambiarías: la giba, la punta, o el perfil en general?\"\n- **Solución:** **Rinomodelación** (sin cirugía, resultado inmediato) · perfil completo → combo con **Mentomodelación** (perfilamiento).\n- **Expectativa:** cambios sutiles-moderados; un cambio drástico es quirúrgico (decirlo da confianza).",
+  "metadata": {
+   "tipo": "dolor",
+   "titulo": "No me gusta mi nariz\" / \"mi giba\" / \"salgo mal en las fotos de perfil",
+   "fuente": "negocio/mapa-dolores-soluciones.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Dolor del cliente y su solución: Quiero operarme la nariz pero me da miedo la cirugía]\n\n- **Solución:** **Rinomodelación** — literalmente existe para este dolor: ver el cambio sin quirófano, resultado inmediato, dura 8-12 meses.",
+  "metadata": {
+   "tipo": "dolor",
+   "titulo": "Quiero operarme la nariz pero me da miedo la cirugía",
+   "fuente": "negocio/mapa-dolores-soluciones.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Dolor del cliente y su solución: Mi mentón está muy metido\" / \"no tengo mandíbula definida]\n\n- **Solución:** **Mentomodelación** · óvalo/flacidez → Puntos de anclaje o HIFU según evaluación.\n\n## CEJAS Y TATUAJES",
+  "metadata": {
+   "tipo": "dolor",
+   "titulo": "Mi mentón está muy metido\" / \"no tengo mandíbula definida",
+   "fuente": "negocio/mapa-dolores-soluciones.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Dolor del cliente y su solución: Me tatuaron mal las cejas\" / \"mi micropigmentación se puso roja/azul\" / \"quiero hacerme cejas nuevas pero tengo el tatuaje viejo]\n\n- **Solución:** **Borrado de cejas (picoláser)**. Requisito: mínimo 3 meses del tatuado. Preguntar SIEMPRE: \"¿hace cuánto te las hiciste?\"",
+  "metadata": {
+   "tipo": "dolor",
+   "titulo": "Me tatuaron mal las cejas\" / \"mi micropigmentación se puso roja/azul\" / \"quiero hacerme cejas nuevas pero tengo el tatuaje viejo",
+   "fuente": "negocio/mapa-dolores-soluciones.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Dolor del cliente y su solución: Quiero borrarme un tatuaje\" / \"me arrepentí (nombre de ex, mala calidad)\" / \"quiero un cover-up y está muy oscuro]\n\n- **Solución:** **Borrado de tatuajes (picoláser)** — también sirve para ACLARAR antes de un cover-up (menos sesiones que borrado total). Pedir foto + zona + hace cuánto (mín. 3 meses); la foto define la TALLA (precios por talla XXXS a XXXL en el catálogo) y la especialista la confirma en consulta.\n\n## SITUACIONES ESPECIALES",
+  "metadata": {
+   "tipo": "dolor",
+   "titulo": "Quiero borrarme un tatuaje\" / \"me arrepentí (nombre de ex, mala calidad)\" / \"quiero un cover-up y está muy oscuro",
+   "fuente": "negocio/mapa-dolores-soluciones.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Dolor del cliente y su solución: ¿Atienden hombres?\" / hombre con vello en espalda, pecho u hombros]\n\n- **Solución:** sí — **depilación láser** (espalda completa es la estrella masculina), HIFU, limpieza, botox: todo es unisex.\n- **Venta:** tratarlo con total naturalidad; los hombres suelen llegar con más vergüenza de preguntar.",
+  "metadata": {
+   "tipo": "dolor",
+   "titulo": "¿Atienden hombres?\" / hombre con vello en espalda, pecho u hombros",
+   "fuente": "negocio/mapa-dolores-soluciones.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Dolor del cliente y su solución: Acabo de ser mamá y quiero recuperarme]\n\n- **⚠️ Filtro primero:** si está en **lactancia**, la mayoría de tratamientos está contraindicada (fichas-procedimientos). Compatible mientras tanto: limpieza facial (confirmar con la especialista).\n- **Acción:** validar su deseo con calidez, explicar el porqué de la espera (cuidarla a ella y al bebé = autoridad y confianza), **registrar fecha estimada de recontacto** — es una venta futura casi segura si se maneja bien.",
+  "metadata": {
+   "tipo": "dolor",
+   "titulo": "Acabo de ser mamá y quiero recuperarme",
+   "fuente": "negocio/mapa-dolores-soluciones.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Dolor del cliente y su solución: Quiero verme bien para mi boda / evento]\n\n- **Afinar:** \"¡Qué emoción! ¿Para cuándo es?\" (la fecha define todo — y es urgencia real para el cierre)\n- **Solución:** evento en días/semanas → Hollywood Peel o limpieza (efecto inmediato, sin recuperación) · 2-3 meses → HIFU, regenerativos o botox (resultados progresivos) · combinar según presupuesto.",
+  "metadata": {
+   "tipo": "dolor",
+   "titulo": "Quiero verme bien para mi boda / evento",
+   "fuente": "negocio/mapa-dolores-soluciones.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Dolor del cliente y su solución: Quiero regalarle algo a mi mamá / amiga / pareja]\n\n- **Solución:** **Plan pareja de limpieza** (las dos juntas, precio en catálogo) · o una limpieza/HP individual como regalo.",
+  "metadata": {
+   "tipo": "dolor",
+   "titulo": "Quiero regalarle algo a mi mamá / amiga / pareja",
+   "fuente": "negocio/mapa-dolores-soluciones.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Dolor del cliente y su solución: Nunca me he hecho nada, no sé por dónde empezar\" / \"solo quiero saber qué necesito]\n\n- **Solución:** **Consulta de valoración (S/ 50)** — la especialista revisa su caso y le dice exactamente qué necesita, sin compromiso; si se trata, se descuenta. O la **Limpieza facial** como experiencia de entrada (y la especialista la evalúa ahí mismo).\n- **Venta:** cero presión (Miner): \"empieza por la valoración, la especialista te dice qué le haría a tu piel, y si decides tratarte esos S/ 50 se descuentan — no pierdes nada\".",
+  "metadata": {
+   "tipo": "dolor",
+   "titulo": "Nunca me he hecho nada, no sé por dónde empezar\" / \"solo quiero saber qué necesito",
+   "fuente": "negocio/mapa-dolores-soluciones.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Dolor del cliente y su solución: Sudo mucho de las axilas\" / \"bruxismo]\n\n- **Solución:** Botox según evaluación de la especialista → **derivar** (no cotizar por chat; la ficha lo marca \"según evaluación\").\n\n---\n**Si el dolor no está en este mapa** (o pide algo que la clínica no hace): decirlo con honestidad, recomendar evaluación con la especialista si hay duda, y NUNCA inventar que un tratamiento sirve para algo que su ficha no indica.",
+  "metadata": {
+   "tipo": "dolor",
+   "titulo": "Sudo mucho de las axilas\" / \"bruxismo",
+   "fuente": "negocio/mapa-dolores-soluciones.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Ficha del procedimiento: Depilación Láser Tridiodo]\n\n**En qué consiste:** láser de triple longitud de onda (755/808/1064 nm) que destruye el folículo piloso de forma progresiva. Reducción permanente del vello tras varias sesiones.\n**Indicado para:** hombres y mujeres con vello no deseado; el tridiodo funciona en la mayoría de fototipos de piel, incluidas pieles morenas. Ideal para foliculitis y vello encarnado.\n**No indicado / contraindicaciones:** embarazo, piel bronceada recientemente o quemada por sol, infecciones activas en la zona, fotosensibilidad por medicamentos (isotretinoína reciente), vello totalmente blanco o cano (el láser no lo detecta).\n**Cuidados previos:** rasurar la zona 24 h antes (no cera ni pinza las 4 semanas previas), no exponerse al sol 2 semanas antes, zona limpia sin cremas.\n**Cuidados posteriores:** protector solar diario, no sol directo por 2 semanas, no exfoliar 1 semana, no sauna/piscina 48-72 h.\n**Sesiones y frecuencia:** típicamente 6-10 sesiones cada 4-6 semanas (por eso el pack de 6 — calza con el tratamiento completo).\n**¿Duele?:** molestia mínima — la punta fría de zafiro enfría la piel en cada disparo (efecto anestésico natural); se siente calorcito y pequeñas \"liguitas\". Sin anestesia.",
+  "metadata": {
+   "tipo": "ficha",
+   "titulo": "Depilación Láser Tridiodo",
+   "fuente": "negocio/fichas-procedimientos.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Ficha del procedimiento: HIFU 12D]\n\n**En qué consiste:** ultrasonido focalizado de alta intensidad que llega a la capa SMAS (la que se tensa en un lifting quirúrgico) estimulando colágeno. Efecto lifting y tensado sin cirugía ni agujas; resultados progresivos en 2-3 meses.\n**Indicado para:** flacidez leve a moderada de rostro, papada, cuello, escote, brazos o abdomen; personas de ±30-60 años que no quieren cirugía.\n**No indicado:** embarazo/lactancia, implantes metálicos o marcapasos en la zona, heridas o acné severo activo en la zona, flacidez muy severa (esa es quirúrgica).\n**Cuidados previos:** zona limpia; informar tratamientos previos con rellenos.\n**Cuidados posteriores:** puede haber enrojecimiento leve 24-48 h; protector solar; evitar calor intenso (sauna) 1 semana.\n**Sesiones y frecuencia:** habitualmente 1 sesión al año o cada 8-12 meses.\n**¿Duele?:** incomodidad tolerable — puntadas de calor profundo en algunas zonas (más cerca del hueso). Generalmente sin anestesia; algunas clínicas ofrecen crema anestésica opcional .\n**Nota de venta:** rostro + papada tiene promo vigente — la promo estrella (precio en el catálogo).",
+  "metadata": {
+   "tipo": "ficha",
+   "titulo": "HIFU 12D",
+   "fuente": "negocio/fichas-procedimientos.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Ficha del procedimiento: Hollywood Peel (protocolo completo de 9 pasos con picoláser)]\n\n**En qué consiste:** protocolo que empieza con una **limpieza facial profunda** (para que el carbón activado penetre bien en los poros) y culmina en el peel de carbón con picoláser. Los 9 pasos:\n1. Exfoliación\n2. Aplicación de ácido salicílico\n3. Extracciones de comedones y puntos negros\n4. Alta frecuencia\n5. Hidrafacial\n6. Mascarilla de carbón activado\n7. **Picoláser** sobre el carbón (el \"Hollywood Peel\" propiamente: vaporiza el carbón arrastrando impurezas y estimulando colágeno)\n8. Máscara LED para desinflamar\n9. Mascarilla hidratante de ácido hialurónico\n\nReduce la grasitud (se achican las glándulas sebáceas), afina los poros y deja la piel luminosa sin descamación visible — el peeling \"de alfombra roja\".\n**Indicado para:** piel grasa o con brillos, poros dilatados, piel opaca, manchas superficiales, acné leve, axilas o zonas oscurecidas (aclarado). Sin tiempo de recuperación — ideal antes de eventos.\n**No indicado:** embarazo, infecciones o herpes activo en la zona, piel muy sensible o quemada por sol, isotretinoína reciente.\n**Cuidados previos:** no exfoliantes ni ácidos 3-5 días antes; no bronceado reciente.\n**Cuidados posteriores:** protector solar estricto, hidratación, no ácidos/retinol por 3-5 días.\n**Sesiones y frecuencia:** resultados visibles desde la 1.ª; ideal pack de 3 espaciadas 1 semana.\n**¿Duele?:** no — el picoláser se siente como calor suave y hormigueo; el resto del protocolo (limpieza, LED, mascarillas) es hasta relajante. Sin anestesia. De los tratamientos más cómodos que existen (argumento de venta).\n**Nota de venta:** la limpieza facial es exactamente este protocolo **sin** los pasos 6 y 7 — el upgrade es obvio: \"por una diferencia pequeña, al mismo protocolo le agregas el carbón activado + picoláser: menos grasitud, poros más finos y el efecto luminoso de alfombra roja\". Listar los 9 pasos en el flyer: es la pila de valor más vendedora de la clínica (Hormozi).",
+  "metadata": {
+   "tipo": "ficha",
+   "titulo": "Hollywood Peel (protocolo completo de 9 pasos con picoláser)",
+   "fuente": "negocio/fichas-procedimientos.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Ficha del procedimiento: Limpieza facial]\n\n> Hay **una sola limpieza facial** (la segunda variante aún no está implementada). Precios, packs y plan pareja: en el catálogo (herramienta 'precios').\n\n**En qué consiste:** el mismo protocolo del Hollywood Peel pero **sin la mascarilla de carbón ni el picoláser**. Los 7 pasos:\n1. Exfoliación\n2. Aplicación de ácido salicílico\n3. Extracciones de comedones y puntos negros\n4. Alta frecuencia\n5. Hidrafacial\n6. Máscara LED para desinflamar\n7. Mascarilla hidratante de ácido hialurónico\n**Indicado para:** todo tipo de piel; mantenimiento mensual; es el **ticket de entrada** de la clínica (experiencia inmediata) y base antes de otros tratamientos; desde aquí se sube al Hollywood Peel (mismo protocolo + carbón + picoláser, por una diferencia pequeña) o a los regenerativos.\n**No indicado:** acné quístico severo activo (requiere evaluación), rosácea en brote, heridas abiertas.\n**Cuidados posteriores:** no maquillaje 12-24 h, protector solar, no exfoliar 3 días.\n**Frecuencia:** cada 4-6 semanas (el pack de 3 cubre ~3 meses de mantenimiento — así se vende). El plan pareja (2 personas) es gancho para traer un lead nuevo con cada cliente.\n**¿Duele?:** sin anestesia; la extracción de comedones puede incomodar un poco, pero pasa rápido.",
+  "metadata": {
+   "tipo": "ficha",
+   "titulo": "Limpieza facial",
+   "fuente": "negocio/fichas-procedimientos.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Ficha del procedimiento: Exosomas TRX (dermapen o subdérmico)]\n\n**En qué consiste:** aplicación de exosomas (vesículas regenerativas) con **dermapen (microneedling) o vía subdérmica** según evaluación; estimulan la reparación celular, colágeno y elastina. Rejuvenecimiento y calidad de piel.\n**Indicado para:** piel envejecida o fotodañada, poros, líneas finas, recuperación post-láser, caída de calidad de piel.\n**No indicado:** embarazo/lactancia, infecciones activas, enfermedades autoinmunes descompensadas.\n**Cuidados posteriores:** no maquillaje 24 h, no sol directo, no ejercicio intenso 24 h.\n**Sesiones:** protocolo típico de 3 sesiones cada 3-4 semanas (por eso el pack).\n**¿Duele?:** molestia mínima — se aplica crema anestésica tópica 15-30 min antes del dermapen.",
+  "metadata": {
+   "tipo": "ficha",
+   "titulo": "Exosomas TRX (dermapen o subdérmico)",
+   "fuente": "negocio/fichas-procedimientos.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Ficha del procedimiento: Ácido Tranexámico (dermapen o subdérmico)]\n\n**En qué consiste:** despigmentante aplicado con **dermapen o vía subdérmica** que bloquea la vía de producción de melanina; el tratamiento de referencia para melasma resistente.\n**Indicado para:** melasma, manchas hormonales o post-inflamatorias, tono desigual.\n**No indicado:** embarazo, antecedentes de trombosis o uso de anticoagulantes , infecciones activas.\n**Cuidados posteriores:** protector solar ESTRICTO (sin él, la mancha vuelve), no ácidos 3-5 días.\n**Sesiones:** típicamente 3+ sesiones cada 2-4 semanas + mantenimiento con fotoprotección.\n**¿Duele?:** molestia mínima — crema anestésica tópica previa a la aplicación.",
+  "metadata": {
+   "tipo": "ficha",
+   "titulo": "Ácido Tranexámico (dermapen o subdérmico)",
+   "fuente": "negocio/fichas-procedimientos.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Ficha del procedimiento: ADN de Salmón (dermapen o subdérmico)]\n\n**En qué consiste:** polinucleótidos derivados de ADN de salmón aplicados con **dermapen o vía subdérmica** según evaluación; hidratación profunda, elasticidad y reparación del daño solar. Muy usado en ojeras y piel fina.\n**Indicado para:** piel deshidratada, fina o fatigada; ojeras; prevención de envejecimiento en pieles jóvenes.\n**No indicado:** alergia al pescado , embarazo/lactancia, infecciones activas.\n**Cuidados posteriores:** pueden quedar pápulas (bolitas) visibles 24-48 h — avisarlo antes para no generar reclamos; no maquillaje 24 h.\n**Sesiones:** protocolo típico 3 sesiones cada 4 semanas.\n**¿Duele?:** molestia mínima con crema anestésica tópica previa; en ojeras puede sentirse una presión leve.",
+  "metadata": {
+   "tipo": "ficha",
+   "titulo": "ADN de Salmón (dermapen o subdérmico)",
+   "fuente": "negocio/fichas-procedimientos.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Ficha del procedimiento: Exosomas + ADN VTECH (dermapen o subdérmico)]\n\n**En qué consiste:** combinación regenerativa premium de exosomas con polinucleótidos en un solo protocolo. Se aplica con **dermapen (microneedling) o vía subdérmica (inyectada)** según evaluación.\n**Indicado / no indicado / cuidados:** similares a exosomas y ADN de salmón.\n**Presentación:** vial entero o medio vial (precios en catálogo) — .\n**¿Duele?:** igual que los demás con dermapen/subdérmico: crema anestésica tópica previa, molestia mínima.",
+  "metadata": {
+   "tipo": "ficha",
+   "titulo": "Exosomas + ADN VTECH (dermapen o subdérmico)",
+   "fuente": "negocio/fichas-procedimientos.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Ficha del procedimiento: Enzimas Recombinantes (papada)]\n\n**En qué consiste:** enzimas (tipo lipasa/liasa) que degradan grasa localizada y fibrosis en la papada sin cirugía.\n**Indicado para:** papada por grasa localizada leve-moderada; quien no quiere liposucción.\n**No indicado:** embarazo/lactancia, papada por flacidez pura (ahí conviene HIFU — venta cruzada natural), alergia a componentes, infecciones activas.\n**Cuidados posteriores:** inflamación y sensibilidad 48-72 h es normal y esperable (avisar antes); frío local; evitar ejercicio 24-48 h.\n**Sesiones:** 2-4 sesiones cada 3-4 semanas según caso (por eso packs x2/x4).\n**¿Duele?:** se trabaja con anestesia tópica y microagujas: pinchazos leves, molestia de leve a moderada según el umbral de cada persona. Lo más notorio es la inflamación posterior 48-72 h (avisar SIEMPRE antes).",
+  "metadata": {
+   "tipo": "ficha",
+   "titulo": "Enzimas Recombinantes (papada)",
+   "fuente": "negocio/fichas-procedimientos.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Ficha del procedimiento: Borrado de Cejas · Borrado de Tatuajes (picoláser)]\n\n> Son **dos servicios distintos con precios distintos**, aunque ambos se hacen con picoláser: la ceja es una zona más delicada (piel fina, cerca del ojo, se preserva el vello) y por eso tiene su propio precio. El agente nunca debe cotizar un tatuaje corporal con el precio de cejas ni al revés.\n\n**En qué consiste:** picoláser que fragmenta el pigmento de micropigmentaciones o tatuajes mal hechos u oxidados en partículas mínimas que el cuerpo elimina progresivamente; el picoláser rompe el pigmento más fino que el Q-switched tradicional (menos sesiones, menos daño a la piel).\n**Requisito obligatorio (ambos servicios):** el tatuaje o micropigmentación debe tener **mínimo 3 meses de realizado**. Pregunta de calificación que el agente SIEMPRE debe hacer antes de agendar: \"¿hace cuánto te lo hiciste?\" — si tiene menos de 3 meses, no se agenda (se anota el lead para recontactar cuando cumpla el plazo).\n**Indicado para:** micropigmentación de cejas antigua, oxidada (rojiza/azulada) o mal diseñada, o preparar la ceja para un nuevo diseño; tatuajes corporales que se desean eliminar o aclarar para cover-up.\n**No indicado:** tatuaje/micropigmentación con menos de 3 meses, embarazo, piel bronceada en la zona, herpes activo, queloides, hongos en la zona.\n**Cuidados posteriores:** costras leves 5-7 días: no rascar, no maquillar la zona, protector solar; esperar cicatrización completa antes de re-micropigmentar (4-6 semanas mín.).\n**Sesiones:** 2-4 según saturación y tipo de pigmento (packs x2/x4 en cejas).\n**Cotización de tatuajes:** hay **precios por talla (XXXS a XXXL)** en el catálogo de la app — la foto del lead sirve para estimar la talla y dar el precio de la tabla; la talla definitiva la confirma la especialista en la consulta. El agente siempre pide: foto + zona del cuerpo + hace cuánto se lo hizo (así valida de paso el requisito de 3 meses). La foto es el \"avance\" de esa conversación: lead que mandó foto = lead comprometido.\n**¿Duele?:** se aplica crema anestésica tópica 30-60 min antes; se siente como chasquidos rápidos de liga elástica y las sesiones son cortas. El picoláser es bastante menos molesto que los láseres antiguos (Q-switched) — argumento de venta.",
+  "metadata": {
+   "tipo": "ficha",
+   "titulo": "Borrado de Cejas · Borrado de Tatuajes (picoláser)",
+   "fuente": "negocio/fichas-procedimientos.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Ficha del procedimiento: Botox (toxina botulínica)]\n\n**En qué consiste:** relaja los músculos que forman arrugas de expresión. Zonas: frente, entrecejo y patas de gallo — **3 zonas = full face**. Efecto desde el día 3-7, dura 4-6 meses.\n**Indicado para:** arrugas de expresión; prevención en pieles jóvenes; también bruxismo o sudoración según evaluación.\n**No indicado:** embarazo/lactancia, enfermedades neuromusculares (miastenia), infección en la zona.\n**Cuidados posteriores:** no tocar/masajear la zona ni acostarse por 4 h, no ejercicio intenso ni calor (sauna) 24 h, no aspirina/alcohol 24 h antes y después.\n**Frecuencia:** retoque cada 4-6 meses (ideal para recompra programada — recordatorio automático por WhatsApp).\n**¿Duele?:** casi nada — agujas ultrafinas (como de acupuntura), pinchacitos de segundos tipo \"picadura de mosquito\". Sin anestesia formal; frío o crema opcional para personas muy sensibles.",
+  "metadata": {
+   "tipo": "ficha",
+   "titulo": "Botox (toxina botulínica)",
+   "fuente": "negocio/fichas-procedimientos.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Ficha del procedimiento: Remoción de Lunares o Acrocordones]\n\n**En qué consiste:** eliminación con electrocauterio/radiofrecuencia o láser de lunares benignos y acrocordones (verruguitas de cuello/axila) en una sesión.\n**Indicado para:** lesiones benignas que molestan estética o funcionalmente (roce con ropa/cadenas).\n**No indicado:** lesiones sospechosas (asimétricas, que cambian, sangran) — esas van PRIMERO a evaluación dermatológica, nunca se remueven directo.\n**Cuidados posteriores:** costra 7-10 días: no rascar, mantener seca/limpia, protector solar en la cicatriz por 1-2 meses.\n**¿Duele?:** NO durante el procedimiento — se hace **con anestesia local**: solo se siente el pinchacito inicial de la anestesia y después nada. (El mensaje más tranquilizador de toda la lista — usarlo.)",
+  "metadata": {
+   "tipo": "ficha",
+   "titulo": "Remoción de Lunares o Acrocordones",
+   "fuente": "negocio/fichas-procedimientos.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Ficha del procedimiento: Rinomodelación]\n\n**En qué consiste:** corrección del perfil de la nariz con ácido hialurónico (1 jeringa) sin cirugía: levanta punta, disimula giba, alinea el dorso. Resultado inmediato, dura 8-12 meses.\n**Indicado para:** giba leve, punta caída, asimetrías leves; quien quiere ver cómo le quedaría sin pasar por rinoplastia.\n**No indicado:** embarazo, rinoplastia previa reciente, infecciones activas.\n**Cuidados posteriores:** no lentes pesados ni presión en la nariz 1-2 semanas, no ejercicio intenso 24-48 h, inflamación leve algunos días.\n**¿Duele?:** molestia leve — crema anestésica previa y el propio relleno lleva **lidocaína incorporada**; se siente presión, no dolor.",
+  "metadata": {
+   "tipo": "ficha",
+   "titulo": "Rinomodelación",
+   "fuente": "negocio/fichas-procedimientos.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Ficha del procedimiento: Mentomodelación]\n\n**En qué consiste:** proyección y definición del mentón con ácido hialurónico (3 jeringas) para armonizar el perfil; suele combinarse con enzimas de papada o rinomodelación (perfilamiento completo — combo natural de upsell).\n**Indicado para:** mentón retraído o poco definido, armonización del perfil, definición del óvalo.\n**No indicado:** embarazo/lactancia, infecciones activas, alergia al hialurónico.\n**Cuidados posteriores:** no masajear ni presionar 2 semanas, no calor intenso 1 semana, inflamación leve normal.\n**Duración:** 10-18 meses según metabolismo.\n**¿Duele?:** igual que la rinomodelación: crema anestésica previa + lidocaína incorporada en el relleno; presión más que dolor.",
+  "metadata": {
+   "tipo": "ficha",
+   "titulo": "Mentomodelación",
+   "fuente": "negocio/fichas-procedimientos.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Ficha del procedimiento: Puntos de Anclaje]\n\n**En qué consiste:** técnica de sostén con ácido hialurónico de alta densidad en puntos estratégicos del rostro (pómulo, mandíbula) que \"ancla\" y tensa los tejidos: efecto lifting líquido. Precio por jeringa con descuento progresivo.\n**Indicado para:** flacidez leve, pérdida de volumen y definición del óvalo facial; complemento o alternativa al HIFU.\n**No indicado:** embarazo/lactancia, infecciones activas, flacidez severa.\n**Cuidados posteriores:** iguales a rellenos: no masajear, no calor intenso 1 semana, no ejercicio 24-48 h.\n**Cantidad típica:** 2-4 jeringas según caso — el precio unitario baja por volumen (argumento de venta integrado).\n**¿Duele?:** como los demás rellenos: crema anestésica previa + lidocaína en el producto; molestia leve.",
+  "metadata": {
+   "tipo": "ficha",
+   "titulo": "Puntos de Anclaje",
+   "fuente": "negocio/fichas-procedimientos.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Ficha del procedimiento: Hidratación con Ácido Hialurónico (dermapen — labios / rostro)]\n\n**En qué consiste:** hialurónico de hidratación aplicado con **dermapen (microneedling)**, no inyectado: microcanales que infunden el producto en la piel. En labios: hidratación y volumen sutil natural, no \"labios operados\". En rostro: luminosidad y piel jugosa (efecto skinbooster).\n**Indicado para:** labios resecos o apagados, piel deshidratada, primer acercamiento de clientas jóvenes a los tratamientos (el ticket de entrada). Aclarar al lead que NO es relleno inyectado — es hidratación (evita miedos y también falsas expectativas de volumen).\n**No indicado:** embarazo/lactancia, herpes labial activo (labios), infecciones o acné activo en la zona, alergia al hialurónico.\n**Cuidados posteriores:** enrojecimiento leve 24 h es normal (típico del dermapen); no maquillaje 24 h, protector solar, no calor intenso ni ejercicio 24 h.\n**Sesiones:** pack de 3 espaciadas 2-4 semanas para efecto acumulativo.\n**¿Duele?:** molestia mínima — crema anestésica tópica previa al dermapen; en labios se siente algo más (zona sensible), pero es rápido.\n\n---",
+  "metadata": {
+   "tipo": "ficha",
+   "titulo": "Hidratación con Ácido Hialurónico (dermapen — labios / rostro)",
+   "fuente": "negocio/fichas-procedimientos.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Ficha del procedimiento: Uso en ventas (cruce con la base de expertos)]\n\n- Cada ficha alimenta el **diagnóstico** (09-neil-rackham, 11-jeremy-miner): el agente pregunta el problema (manchas, flacidez, vello, papada…) y la ficha le dice qué procedimiento ofrecer y cuál NO.\n- Las **contraindicaciones son filtro de calificación** (10-david-sandler): preguntar embarazo/lactancia y condiciones ANTES de ofertar evita reservas fallidas y reclamos.\n- Los **cuidados posteriores** son material de postventa (04-joe-girard): mensaje automático post-sesión con los cuidados = servicio percibido + excusa de contacto.\n- Los pares naturales de **venta cruzada**: papada (enzimas) ↔ HIFU; rinomodelación ↔ mentomodelación (perfilamiento); limpieza facial → puerta de entrada a todo lo demás; hidratación de labios → ticket de entrada a inyectables.",
+  "metadata": {
+   "tipo": "ficha",
+   "titulo": "Uso en ventas (cruce con la base de expertos)",
+   "fuente": "negocio/fichas-procedimientos.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Cómo responder la objeción: Está caro]\n\n- Reencuadre precio vs. costo (Ziglar): \"¿caro comparado con qué?\" y el costo de NO resolverlo (que el lead ya dimensionó si hiciste preguntas de consecuencia).\n- Reducción al ridículo (Hopkins): dividir por día.\n- Cardone: jamás bajes el precio como primera respuesta; sube el valor percibido (bonos, garantía — Hormozi).\n- Formato: audio con tono de certeza tranquila; flyer con la pila de valor.",
+  "metadata": {
+   "tipo": "objecion",
+   "titulo": "Está caro",
+   "fuente": "guias/playbook-objeciones.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Cómo responder la objeción: Lo voy a pensar]\n\n- Casi siempre cortina de humo (Belfort). Miner, con curiosidad neutral: \"Claro — ¿qué parte es la que quieres pensar mejor?\" → revela la objeción real.\n- Prevención: contrato previo de Sandler (\"mañana me dices sí o no, el no también sirve\").\n- Kennedy: deadline real para que \"pensarlo\" tenga fecha.",
+  "metadata": {
+   "tipo": "objecion",
+   "titulo": "Lo voy a pensar",
+   "fuente": "guias/playbook-objeciones.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Cómo responder la objeción: Tengo que consultarlo (con mi pareja/socio)]\n\n- Validar + calibrada de Voss: \"Tiene sentido. ¿Qué crees que le va a preocupar más a él/ella?\" → te dice la objeción real y te deja armarle los argumentos.\n- Ofrecer material para el tercero: video corto o flyer resumen pensado para alguien que no vio la conversación.",
+  "metadata": {
+   "tipo": "objecion",
+   "titulo": "Tengo que consultarlo (con mi pareja/socio)",
+   "fuente": "guias/playbook-objeciones.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Cómo responder la objeción: Mándame la info]\n\n- Brush-off clásico (Blount): si mandas el PDF completo, mueres en visto (Sandler: no hagas consultoría gratis).\n- Jugada: micro-acuerdo antes del material. \"Con gusto. Para mandarte solo lo que te sirve: ¿tu caso es más A o B?\" → reabre el diagnóstico.\n- Si insiste: material parcial + contrato previo (\"te lo mando y mañana te escribo, ¿te parece justo?\").",
+  "metadata": {
+   "tipo": "objecion",
+   "titulo": "Mándame la info",
+   "fuente": "guias/playbook-objeciones.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Cómo responder la objeción: Visto sin respuesta / desaparecido]\n\n- Cadencia de valor, nunca \"¿pudiste verlo?\" (Blount, Cardone): cada toque trae algo nuevo.\n- Auditoría de acusaciones (Voss): \"Seguro sientes que te voy a perseguir como vendedor pesado…\"\n- Último recurso, la pregunta de 9 palabras: \"¿Diste por terminada la idea de [su objetivo]?\"",
+  "metadata": {
+   "tipo": "objecion",
+   "titulo": "Visto sin respuesta / desaparecido",
+   "fuente": "guias/playbook-objeciones.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Cómo responder la objeción: Ya trabajo con otro / ya tengo proveedor]\n\n- No atacar al competidor (Carnegie). Calibrada: \"¿Qué es lo que más valoras de trabajar con ellos?… ¿y qué mejorarías?\"\n- Holmes: probablemente es del 30 % que no lo está pensando → educación espaciada, no pelea frontal. Sembrar y pasar a EN NUTRICIÓN.",
+  "metadata": {
+   "tipo": "objecion",
+   "titulo": "Ya trabajo con otro / ya tengo proveedor",
+   "fuente": "guias/playbook-objeciones.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Cómo responder la objeción: No me interesa\" (temprano, sin conversación)]\n\n- Refleja pura (Blount): no es información, es reflejo. Ledge + disrupt: romper el patrón con algo inesperado y un micro-pedido (\"te hago una sola pregunta y si no aplica, no te escribo más, ¿va?\").\n- Pregunta orientada al no (Voss): \"¿Es mala idea que te cuente en 30 segundos de qué se trata?\"\n- Si el no se mantiene: descalificar con elegancia y registrar. Un no rápido también es victoria (Sandler).\n\n## Regla final\nCada objeción que te haga perder una venta se registra (estado PERDIDO con razón). Con esa lista, Hormozi rediseña la oferta: un bono o garantía nuevo por cada objeción recurrente, para matarla antes de que aparezca.",
+  "metadata": {
+   "tipo": "objecion",
+   "titulo": "No me interesa\" (temprano, sin conversación)",
+   "fuente": "guias/playbook-objeciones.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Guiones de WhatsApp: 1 · Primer contacto (estado NUEVO)]\n\n**Lead que llega de un anuncio (ej. promo HIFU):**\n> ¡Hola! 😊 Qué bueno que escribes por el HIFU — es nuestro lifting sin cirugía: efecto tensor desde la primera sesión y sigue mejorando durante 2-3 meses ✨\n>\n> Para decirte exactamente cómo quedaría en TU caso (y tu plan con la promo), ¿me mandas una foto de frente con buena luz?\n>\n> ¿Lo quieres más que nada para tensar el rostro o te preocupa más la papada?\n\n**Lead genérico (\"info porfa\" / \"precios\"):**\n> ¡Hola! Bienvenida a *DermicaPro* 😊 Con gusto te paso la info.\n>\n> Para mandarte solo lo que te sirve: ¿qué te gustaría tratarte? ¿Depilación láser, algo facial (manchas, limpieza, rejuvenecimiento) o modelado (nariz, mentón, botox)?\n\n**Lead que pide precio de una zona de depilación:**\n> ¡Claro que sí! 😊 Para armarte tu *plan exacto* con su inversión: ¿qué zonas te gustaría tratarte?\n>\n> Nuestro láser es *tridiodo* — funciona en casi todo tipo de piel y es de los más cómodos que existen ✨\n\n(El precio con pack y ancla va en la OFERTA, cuando ya dijo sus zonas — política: valor primero, ver decisiones-agente §1.)\n\n**Comprador directo que pide fecha de una (fast-track NUEVO → AGENDADO — no interrogarlo):**\n> ¡Buenísimo, [NOMBRE]! Solo un par de preguntas rapiditas para cuidarte: ¿estás embarazada o dando de lactar? ¿Algún tratamiento médico en la zona?\n\n> ¡Todo perfecto! ✅ Tengo [DÍA 1] a las [HORA] o [DÍA 2] a las [HORA], ¿cuál te acomoda?\n>\n> Con *S/ 50 de adelanto* por Yape o Plin te la dejo separada (se descuentan de tu tratamiento, o sea no pagas de más 😊)",
+  "metadata": {
+   "tipo": "guion",
+   "titulo": "1 · Primer contacto (estado NUEVO)",
+   "fuente": "negocio/guiones-whatsapp.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Guiones de WhatsApp: 2 · La pregunta de precio (política: VALOR PRIMERO, nunca la cifra en frío)]\n\n**Fórmula:** validar + diferenciar en una línea + puente a la pre-evaluación. El precio con pack y ancla se presenta en la OFERTA (§5). Ver decisiones-agente §1.\n\n**Primera pregunta de precio (ej. facial):**\n> ¡Claro que sí! 😊 La inversión depende de lo que tu piel necesita — nuestro *Hollywood Peel* es un protocolo completo de *9 pasos con picoláser*, no un peel simple.\n>\n> Mándame una foto de tu rostro con buena luz y te digo exactamente cuál sería tu plan y su inversión ✨\n\n**Si insiste con el precio (2.ª vez) — dar el \"desde\" con diferenciación:**\n> ¡Por supuesto! Van desde *S/ [DESDE]* según lo que tu piel necesite 😊 Por eso la pre-evaluación: para que tu plan sea exacto, ni de más ni de menos.\n>\n> ¿Me mandas la fotito y te lo confirmo al toque?\n\n(Si insiste 3.ª vez o se molesta: precio con diferenciación, sin pelear, y registrar \"comparador de precio\".)\n\n**Downsell a Consulta de valoración (para indecisos, ticket alto, o quien \"solo quiere saber qué necesita\"):**\n> ¿Y si empezamos por lo más simple? Agenda tu *consulta de valoración* (S/ 50): la especialista revisa tu caso en persona y te dice exactamente qué necesitas — sin ningún compromiso.\n>\n> Y si decides tratarte, esos S/ 50 se descuentan completitos de tu tratamiento 😊\n\n**Ticket alto (rino, mento, anclaje, VTECH):**\n> Te cuento 😊 La rinomodelación es *sin cirugía*, con ácido hialurónico: levanta la punta, disimula la giba y el resultado se ve *al instante* — lo hace nuestra especialista e incluye tu evaluación.\n>\n> Lo primero es saber si eres candidata: ¿qué es lo que te gustaría mejorar de tu nariz?\n\n**Borrado de tatuajes (precio por talla — la foto define la talla):**\n> ¡Claro! El borrado va *por tamaño del tatuaje* — desde S/ 80 los más chiquitos 😊\n>\n> Mándame una *foto* y te digo al toque el precio del tuyo. ¿Hace cuánto te lo hiciste? (mínimo debe tener 3 meses)\n\n(El precio exacto sale de la tabla por talla del catálogo según la foto; la talla definitiva la confirma la especialista en la consulta.)\n\n**Si preguntan por tarjeta / formas de pago:**\n> Puedes pagar con *Yape, Plin*, efectivo en la clínica, o tarjeta (la tarjeta tiene un recargo del 5 %).\n>\n> ¿Cuál te acomoda más?",
+  "metadata": {
+   "tipo": "guion",
+   "titulo": "2 · La pregunta de precio (política: VALOR PRIMERO, nunca la cifra en frío)",
+   "fuente": "negocio/guiones-whatsapp.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Guiones de WhatsApp: 3 · Diagnóstico (2-4 preguntas máximo, UNA por mensaje)]\n\n> Cuando el lead llega con un **dolor** (\"tengo manchas\", \"quiero quitarme la papada\") y no con el nombre del tratamiento: buscar su problema en mapa-dolores-soluciones — ahí está el servicio que aplica y la pregunta de afinación exacta.\n\nEstructura de las preguntas (SPIN de Rackham + consecuencia de Miner): situación → problema → **consecuencia/implicación** (⭐ aquí el lead construye su propia urgencia) → necesidad-beneficio (su respuesta se repite después en la oferta — es su propio argumento de cierre).\n\n**Depilación:**\n1. Situación: \"¿Qué zonas te gustaría? ¿Y cómo te depilas ahora, cera o rasuradora?\"\n2. Problema: \"¿Qué es lo que más te fastidia de eso?\" (dolor, encarnados, tiempo, gasto)\n3. Consecuencia ⭐: \"¿Has sacado la cuenta de cuánto llevas gastado en cera solo este año?\"\n4. Beneficio: \"¿Qué sería lo mejor de olvidarte del vello para siempre?\" → su respuesta va literal en la oferta.\n\n**Facial (manchas / limpieza / rejuvenecimiento):**\n1. Conciencia: \"¿Qué es lo que más te incomoda de tu piel ahorita?\"\n2. Historia: \"¿Hace cuánto lo notas? ¿Has probado algo? ¿Te funcionó?\" (la frustración con cremas = puerta del tranexámico)\n3. Consecuencia ⭐: \"¿Y qué pasa si sigue igual 6 meses más?\" / \"¿cómo te hace sentir cuando te ves así en fotos?\"\n\n**Modelado (nariz, mentón, botox):**\n1. Deseo: \"¿Qué te gustaría mejorar exactamente?\"\n2. Historia: \"¿Es algo que vienes pensando hace tiempo o lo viste hace poco?\" (años pensándolo = dolor profundo)\n3. Fecha ⭐: \"¿Para cuándo te gustaría verte el cambio?\" (bodas/eventos = urgencia real y deadline honesto)\n4. Emoción: \"¿Cómo te sentirías viéndote con [SU DESEO]?\" (Belfort: la lógica justifica, la emoción decide).\n\n**Filtro de contraindicaciones (SIEMPRE antes de agendar, en tono de cuidado, no de interrogatorio):**\n> Antes de agendarte, un par de preguntas para cuidarte 😊\n>\n> ¿Estás embarazada o dando de lactar? ¿Alguna condición de piel o tratamiento médico en la zona?\n\n(Las contraindicaciones específicas de cada servicio están en fichas-procedimientos — ante cualquier duda, derivar a la especialista.)",
+  "metadata": {
+   "tipo": "guion",
+   "titulo": "3 · Diagnóstico (2-4 preguntas máximo, UNA por mensaje)",
+   "fuente": "negocio/guiones-whatsapp.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Guiones de WhatsApp: 4 · Pre-suasión + contrato previo (estado CALIFICADO)]\n\n**Sello de seguridad (cierra el diagnóstico — la certeza va antes que cualquier cifra):**\n> Con todo lo que me cuentas, te tengo buenas noticias: esto *tiene solución* y es justo lo que trabajamos 🤍\n>\n> Déjame armarte tu plan exacto y te lo paso en un momento.\n\n**Prueba social antes de la oferta** (flyer antes/después o video del MISMO servicio):\n> Mira, ella llegó igual que tú por [PROBLEMA] 👇 [foto/video]\n>\n> Así quedó después de [N] sesiones.\n\n**Contrato previo (mata el \"lo voy a pensar\" de mañana):**\n> Te armo tu propuesta con todo lo que me contaste 😊\n>\n> Mírala hoy con calma, y mañana te escribo y me dices con toda confianza si le entramos o no — un *no* también me sirve, ¿te parece justo?\n\n**Cumplir el contrato previo (al día siguiente, tal cual se prometió — este mensaje es sagrado):**\n> ¡Hola [NOMBRE]! Como quedamos ayer 😊\n>\n> ¿Qué me dices — le entramos o no? Con toda confianza, un *no* también vale",
+  "metadata": {
+   "tipo": "guion",
+   "titulo": "4 · Pre-suasión + contrato previo (estado CALIFICADO)",
+   "fuente": "negocio/guiones-whatsapp.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Guiones de WhatsApp: 5 · Oferta y cierre]\n\n**Oferta — método $100M Offers: recap del dolor → pila de valor → ancla → precio AL FINAL → cierre (ejemplo depilación axilas):**\n> Listo [NOMBRE], tu plan para [SU DOLOR CON SUS PALABRAS — ej. \"olvidarte de la cera y los vellos encarnados\"] 👇\n>\n> ✅ *Depilación láser tridiodo* de axilas — 6 sesiones completas\n> ✅ Evaluación de tu piel por nuestros especialistas en la 1.ª sesión\n> ✅ Control de revisión incluido, sin costo\n>\n> Todo eso en sesiones sueltas sería ~S/ 300~ — tu pack completo queda en *S/ 200* (2 sesiones gratis ✨)\n>\n> Con *S/ 50 de adelanto* (se descuentan de tu pack) te separo tu cita 😊\n>\n> ¿Te acomoda más entre semana o sábado?\n\n(Reglas Hormozi: el precio SIEMPRE al final del mensaje, después del valor. Nunca descuentes — si el lead duda, AGREGA valor: guarda 1 bono en reserva para el loop de objeción. Las cifras salen del catálogo vigente, no de este ejemplo.)\n\n**Cierre alternativo + adelanto:**\n> ¡Buenísima elección! Tengo [DÍA 1] a las [HORA] o [DÍA 2] a las [HORA], ¿cuál prefieres?\n\n> Perfecto, te separo el [FECHA] ✨ Me confirmas con el adelanto de *S/ 50* por *Yape o Plin* (se descuenta de tu tratamiento) y queda agendado.\n\n(Regla de packs — operacion: el pack se paga **completo en la primera sesión** y el adelanto se descuenta de ese pago. Si preguntan cuándo se paga el resto: \"el resto lo pagas el día de tu primera sesión 😊\".)",
+  "metadata": {
+   "tipo": "guion",
+   "titulo": "5 · Oferta y cierre",
+   "fuente": "negocio/guiones-whatsapp.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Guiones de WhatsApp: 6 · Objeciones (versión DermicaPro — proceso completo en playbook-objeciones)]\n\n**\"Está caro\" (depilación / comparando con otra clínica):**\n> Te entiendo, es una inversión 😊 ¿Caro comparado con otra clínica o con lo que gastas hoy en cera?\n>\n> Te digo por qué cuesta lo que cuesta: trabajamos con *láser tridiodo* (sirve para casi todo tipo de piel, no solo pieles claras) y cada sesión la hace personal capacitado, no una máquina en promoción.\n>\n> Y saca la cuenta: la cera son S/ [X] al mes *para siempre*. El pack son 5 sesiones y el vello ya no vuelve como antes ✨\n\n**\"Está caro\" (HIFU / ticket alto):** audio con tono calmado (Voss) + este marco:\n> Justamente por eso está la promo: ~S/ 590~ *S/ 400* 😊\n>\n> Piénsalo así: es *una vez al año*. Sale menos que lo que muchas invierten al mes en cremas que no llegan donde llega el HIFU (la capa donde se hace el lifting quirúrgico, pero sin cirugía).\n\n**\"Lo voy a pensar\":**\n> ¡Claro, tómate tu tiempo! 😊\n>\n> Solo para ayudarte a pensarlo mejor: ¿qué es lo que te hace dudar — el precio, el procedimiento en sí, o encontrar el momento?\n\n**\"Le pregunto a mi esposo/a\":**\n> ¡Por supuesto! 😊 ¿Qué crees que le va a preocupar más: la inversión o el procedimiento?\n>\n> Te mando un video cortito que se lo explica todo en 1 minuto, para que no tengas que hacerla tú de vendedora\n\n**\"Mándame la info\" (sin conversación previa):**\n> ¡Con gusto! Para mandarte solo lo que te sirve y no marearte:\n>\n> ¿Tu caso es más [OPCIÓN A] o [OPCIÓN B]?\n\n**\"¿Duele?\" (pregunta frecuente, no objeción):** responder SIEMPRE en términos de *incomodidad tolerable* — nunca negar toda sensación (genera desconfianza al llegar a la cita) ni usar la palabra \"dolor\". El detalle por procedimiento está en la línea «¿Duele?» de cada ficha (fichas-procedimientos).\n> Para nada es como te imaginas 😊 Es una *incomodidad tolerable*, nada más — [DETALLE DE LA FICHA: depilación: \"la punta va enfriando la piel en cada toque\" / dermapen o picoláser: \"te ponemos crema anestésica antes\" / lunares: \"va con anestesia local, solo sientes el primer pinchacito\" / rellenos: \"el producto mismo viene con anestésico\"].\n>\n> Y vamos regulando contigo durante la sesión — tú mandas",
+  "metadata": {
+   "tipo": "guion",
+   "titulo": "6 · Objeciones (versión DermicaPro — proceso completo en playbook-objeciones)",
+   "fuente": "negocio/guiones-whatsapp.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Guiones de WhatsApp: 7 · Seguimiento (cadencia tras oferta sin respuesta)]\n\n> Esta cadencia asume que el lead **ya vio una oferta**. Si se silenció ANTES (se quedó en diagnóstico), usar solo toques de re-enganche — nunca promos ni deadlines de algo que nunca vio:\n> **Toque pre-oferta:**\n> ¡Hola [NOMBRE]! 😊 Me quedé pensando en lo que me contabas de [SU PROBLEMA].\n>\n> ¿Sigue en pie la idea o te agarré en una semana complicada?\n\n- **Toque 1 (día 1):** recap corto + pregunta fácil. \"¡Hola [NOMBRE]! 😊 ¿Pudiste ver la propuesta? Cualquier duda me dices, aunque sea chiquita\"\n- **Toque 2 (día 3):** prueba social nueva. \"Mira lo que me llegó hoy 👇 [testimonio]. Me acordé de ti porque ella empezó igual, dudando\"\n- **Toque 3 (día 7):** valor puro, sin vender. Tip de cuidado de piel / dato del servicio.\n- **Toque 4 (día 14):** promo o deadline real. \"Se están llenando los cupos de [MES] — si aún te interesa, te guardo uno sin compromiso hasta el [FECHA] ⏰\"\n- **Toque 5 (día 21):** *audio* de 30 s, cálido, tono cero presión: \"te grabo esto rapidito para que no quede en texto frío…\"\n- **Toque 6 (día 30):** la pregunta de 9 palabras, texto solo, sin emojis: \"¿Diste por descartada la idea de [SU OBJETIVO]?\"\n\nDespués del toque 6 sin respuesta → EN NUTRICIÓN (contenido 3:1, ver decisiones-agente §3).\n\n**Si en cualquier toque responde un \"no\" claro → PERDIDO. Cierre elegante que registra la razón (preguntar UNA sola vez, la mejor data del negocio):**\n> ¡Todo bien, [NOMBRE]! Te dejo de escribir por aquí 😊 Solo una última cosita que me ayuda un montón a mejorar:\n>\n> ¿Qué fue lo que no te terminó de convencer — el precio, el momento, o algo del tratamiento?",
+  "metadata": {
+   "tipo": "guion",
+   "titulo": "7 · Seguimiento (cadencia tras oferta sin respuesta)",
+   "fuente": "negocio/guiones-whatsapp.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Guiones de WhatsApp: 8 · Cita agendada (anti-no-show)]\n\n**Confirmación (al recibir el adelanto):**\n> ¡Listo [NOMBRE]! 🎉 Tu cita quedó separada:\n>\n> 📅 [DÍA] [FECHA] — [HORA]\n> 📍 Av. Víctor Larco Herrera 877, Urb. Vista Alegre — Trujillo\n> 📍 https://maps.app.goo.gl/W2KsCi6KEDgV76rs9\n> 💆‍♀️ [SERVICIO]\n> ✅ Adelanto S/ 50 recibido (se descuenta de tu tratamiento)\n>\n> Cuidados previos: [SEGÚN FICHA — ej. depilación: ven con la zona rasurada 24 h antes y sin cremas]\n\n**Recordatorio 24 h antes:**\n> ¡Hola [NOMBRE]! 😊 Te esperamos *mañana [DÍA] a las [HORA]* para tu [SERVICIO].\n>\n> ¿Confirmamos?\n\n**Recordatorio el mismo día (2-3 h antes):**\n> ¡[NOMBRE]! Hoy es el día ✨ Te esperamos a las *[HORA]*. ¡Nos vemos al rato!\n\n**Avisa con ≥12 h de anticipación que no puede (reagendo proactivo — no es no-show, adelanto intacto):**\n> ¡Gracias por avisarme, [NOMBRE]! Cero problema.\n>\n> Tu adelanto queda *intacto* para la nueva fecha 😊 Tengo [DÍA 1] o [DÍA 2], ¿cuál te acomoda?\n\n(Si avisa con **menos de 12 h**: se reagenda igual con amabilidad, pero cuenta como inasistencia para la política del adelanto — comunicarlo en positivo, igual que el no-show: \"tu adelanto sigue válido para esta reprogramación 😊\".)\n\n**No-show (mismo día, sin culpa):**\n> ¡Hola [NOMBRE]! Te esperamos hoy y no pudiste llegar — tranquila, a cualquiera le pasa 😊\n>\n> ¿Reagendamos? Tengo [DÍA 1] o [DÍA 2], ¿cuál te acomoda?\n\n**Al reagendar tras el primer no-show (comunicar la política en positivo):**\n> ¡Listo, quedó para el [FECHA]! ✨ Tu adelanto de *S/ 50 sigue válido* para esta nueva fecha 😊\n>\n> Solo tenlo presente: el adelanto se mantiene para esta única reprogramación\n\n(Política completa en operacion: 1.ª inasistencia conserva el adelanto, 2.ª inasistencia lo pierde. Si pregunta por qué, explicar con empatía que el cupo queda bloqueado para otras clientas.)\n\n**Cancelación definitiva (\"ya no voy a poder / ya no quiero\"):** la regla del adelanto está **[pendiente de definir en operacion** — ¿se devuelve, queda como crédito o se pierde?]. Mientras tanto el agente NO inventa la respuesta:\n> Entiendo perfecto, [NOMBRE] 😊 Déjame coordinarlo con administración y te escribo hoy mismo con la respuesta sobre tu adelanto, ¿va?",
+  "metadata": {
+   "tipo": "guion",
+   "titulo": "8 · Cita agendada (anti-no-show)",
+   "fuente": "negocio/guiones-whatsapp.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Guiones de WhatsApp: 9 · Postventa y recompra]\n\n**24-48 h después de la sesión:**\n> ¡Hola [NOMBRE]! ¿Cómo te fue? ¿Cómo sientes la piel? 😊\n>\n> Recuerda: [CUIDADOS POSTERIORES SEGÚN FICHA]. Cualquier cosa rara que notes, me escribes de frente.\n\n**Pedir referido (en el pico de satisfacción, cuando responde feliz):**\n> ¡Me alegra un montón! Oye, ¿tienes una amiga o familiar que le gustaría algo así?\n>\n> Tenemos el *plan pareja de limpieza facial: S/ 160 por las dos* — vienen juntas y se engríen las dos\n\n**Cliente que pregunta por OTRO servicio (cross-sell — nunca tratarlo como lead nuevo):**\n> ¡Claro que sí! Y como ya eres clienta de la casa, va con toda la confianza:\n>\n> [1 LÍNEA DE VALOR DEL NUEVO SERVICIO + SU PRECIO DEL CATÁLOGO + PREGUNTA DE CIERRE]\n> (Con clienta activa el precio sí va directo: la confianza ya existe y no es comparadora.)\n>\n> (Repetir el filtro de contraindicaciones del nuevo servicio antes de agendar.)\n\n**Recompra programada:**\n- Siguiente sesión de pack: agendarla ANTES de que salga de la clínica; recordatorio por WhatsApp a los [según ficha] días.\n- Botox: recontacto al mes 4 — \"¡Hola [NOMBRE]! Ya van 4 meses de tu botox 😊 Para que no se te pase el efecto, ¿te agendo el retoque?\"\n- Depilación (terminó pack 6): \"¡Terminaste tu pack! 🎉 Si tu vello aún necesita unas sesiones más para el resultado completo, ¿seguimos?\"",
+  "metadata": {
+   "tipo": "guion",
+   "titulo": "9 · Postventa y recompra",
+   "fuente": "negocio/guiones-whatsapp.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Guiones de WhatsApp: 10 · Nutrición (leads fríos, ritmo 3 valor : 1 oferta)]\n\nPiezas de valor rotativas (por estados de WhatsApp o lista de difusión de contactos que ya interactuaron — nunca a números fríos, riesgo de bloqueo):\n1. Tip de cuidado de piel con dato concreto.\n2. Antes/después con mini-historia (Hook-Story sin Offer).\n3. Respuesta a pregunta frecuente (\"¿el láser sirve en piel morena? Sí, el tridiodo…\").\n4. (La 4.ª pieza sí es oferta) Promo con deadline real.\n\n**Si alguien pide no recibir más mensajes → BAJA inmediata**, sin intentar retener (proteger el número — ver funnel-estados-leads estado 11):\n> ¡Entendido, [NOMBRE]! No te escribo más por aquí 😊\n>\n> Cuando gustes, ya sabes dónde encontrarnos. ¡Gracias!",
+  "metadata": {
+   "tipo": "guion",
+   "titulo": "10 · Nutrición (leads fríos, ritmo 3 valor : 1 oferta)",
+   "fuente": "negocio/guiones-whatsapp.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Guiones de WhatsApp: 11 · Conversación canónica (el sistema completo en acción)]\n\n> Ejemplo de referencia para tono, ritmo y transiciones — ideal como few-shot del prompt. Entre [corchetes], el estado del lead según funnel-estados-leads.\n\n**Lead:** \"Hola, vi su anuncio, ¿cuánto está el tratamiento para las manchas?\" `[NUEVO]`\n\n**Agente** (valor primero + pregunta de afinación del mapa-dolores-soluciones — sin cifra en frío):\n> ¡Hola! 😊 Claro que sí. La inversión depende del tipo de mancha — trabajamos desde peeling con *picoláser* hasta el tratamiento *especializado en melasma*, y el plan se arma según TU piel.\n>\n> Para orientarte bien: ¿tus manchas salieron con el embarazo u hormonas, o más por el sol?\n\n**Lead:** \"Con mi embarazo me salieron y no se van, ya probé de todo\" `[EN DIAGNÓSTICO]`\n\n**Agente** (validar + historia — Miner):\n> Uf, te entiendo — el melasma es terco justamente porque las cremas trabajan en la superficie y la mancha se produce más adentro\n>\n> ¿Hace cuánto vienes luchando con esto?\n\n**Lead:** \"Como 2 años, ya me da roche salir sin base\"\n\n**Agente** (etiqueta de Voss + filtro de contraindicaciones):\n> 2 años tapándote con base… se nota que ya quieres resolverlo de verdad Justo el *ácido tranexámico* trabaja donde se produce la mancha, no encima.\n>\n> Antes de avanzar, un par de preguntas para cuidarte: ¿estás embarazada o dando de lactar? ¿Tomas anticoagulantes?\n\n**Lead:** \"No, nada de eso\" `[CALIFICADO]`\n\n**Agente** (sello de seguridad + prueba social + contrato previo — Miner/Cialdini/Sandler):\n> ¡Perfecto! Y te tengo buenas noticias: esto *tiene solución* y es justo lo que trabajamos 🤍\n>\n> Mira, ella llegó igualita que tú 👇 [foto antes/después de melasma]\n>\n> Te propongo esto: te paso el detalle, lo ves con calma hoy, y mañana te escribo y me dices sí o no con toda confianza — un *no* también me sirve 😊 ¿te parece justo?\n\n**Lead:** \"Ya, dale\"\n\n**Agente** (oferta con pack y ancla — Hormozi/Ziglar): `[OFERTA PRESENTADA]`\n> Listo, tu plan para despedirte del melasma 👇\n>\n> ✅ *Ácido tranexámico* — el tratamiento de referencia para melasma resistente\n> ✅ Aplicado con dermapen por nuestros especialistas (con crema anestésica: molestia mínima)\n> ✅ *Pack 3 sesiones: S/ 800* (~S/ 900~ si fueran sueltas)\n>\n> Con *S/ 50 de adelanto* separas tu primera cita (se descuentan del tratamiento, o sea no pagas de más 😊)\n>\n> ¿Te acomoda más entre semana o sábado?\n\n**Lead:** \"Uy, déjame pensarlo\" `[EN OBJECIÓN]`\n\n**Agente** (curiosidad neutral — Miner, aislar):\n> ¡Claro, tómate tu tiempo! 😊\n>\n> Solo para ayudarte a pensarlo mejor: ¿qué parte es la que quieres pensar — la inversión, el procedimiento, o encontrar el momento?\n\n**Lead:** \"Es que 800 de golpe…\"\n\n**Agente** (acordar — Cardone + reducción al ridículo — Hopkins + re-cierre — Ziglar):\n> Te entiendo perfecto ¿Y si lo vemos así? Ya llevas 2 años invirtiendo en cremas y base que no lo resolvieron…\n>\n> El pack sale como *S/ 9 al día* durante el tratamiento — y es de lo poco que ataca el melasma de raíz, no encima.\n>\n> Si la inversión queda resuelta, ¿empezamos este sábado?\n\n**Lead:** \"Ya pues, ¿cómo pago?\" → manda el adelanto `[AGENDADO]`\n\n**Agente:** confirmación completa de §8 (fecha + dirección + Maps + cuidados previos) → recordatorios → asiste `[GANADO/CLIENTE ACTIVO]` → §9 (post-sesión + siguiente cita del pack agendada antes de salir).",
+  "metadata": {
+   "tipo": "guion",
+   "titulo": "11 · Conversación canónica (el sistema completo en acción)",
+   "fuente": "negocio/guiones-whatsapp.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Cómo responder objeciones: El proceso maestro (5 pasos, sirve para toda objeción)]\n\n1. **ACORDAR** (Cardone): nunca contradigas. \"Te entiendo perfecto…\" / \"Tienes toda la razón en pensarlo…\" — Ledge de Blount: tu frase-ancla para no reaccionar en caliente.\n2. **ETIQUETAR** (Voss): nombra la emoción real. \"Parece que te preocupa pagar por algo que aún no viste funcionar.\"\n3. **AISLAR**: confirma que es LA objeción. \"Si eso estuviera resuelto, ¿avanzarías?\" — si dice no, hay otra objeción detrás; búscala antes de responder.\n4. **RE-PRESENTAR VALOR** (Belfort): la objeción es certeza insuficiente en producto, en ti o en la empresa. Ataca el punto débil con material NUEVO (caso, testimonio, garantía), no repitiendo lo ya dicho.\n5. **RE-CERRAR** con pregunta alternativa (Ziglar). Máximo 2-3 loops; después, al estado EN SEGUIMIENTO con cadencia (con fecha pactada si la pidió).",
+  "metadata": {
+   "tipo": "objecion",
+   "titulo": "El proceso maestro (5 pasos, sirve para toda objeción)",
+   "fuente": "guias/playbook-objeciones.md"
+  }
+ },
+ {
+  "texto": "[DermicaPro · Cómo responder objeciones: Regla final]\n\nCada objeción que te haga perder una venta se registra (estado PERDIDO con razón). Con esa lista, Hormozi rediseña la oferta: un bono o garantía nuevo por cada objeción recurrente, para matarla antes de que aparezca.",
+  "metadata": {
+   "tipo": "objecion",
+   "titulo": "Regla final",
+   "fuente": "guias/playbook-objeciones.md"
+  }
+ }
+]
