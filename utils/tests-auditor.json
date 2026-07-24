@@ -1,0 +1,307 @@
+[
+ {
+  "id": 1,
+  "nombre": "Precio en frío + descuento inventado + cita sin adelanto → reprobado",
+  "lead": {
+   "remote_jid": "51999100001@s.whatsapp.net",
+   "nombre": null,
+   "estado": "perdido",
+   "servicio_interes": "Hollywood Peel",
+   "razon_perdido": "precio",
+   "notas": "Comparó con otra clínica; no-show el sábado.",
+   "con_especialista": false,
+   "contador_noshow": 1,
+   "ultimo_emisor": "vendedor",
+   "ultimo_mensaje_at": "2026-07-11T11:05:00-05:00"
+  },
+  "historial": [
+   { "rol": "cliente", "fecha": "2026-07-10T10:00:00-05:00", "texto": "Hola, ¿cuánto está el hollywood peel?" },
+   { "rol": "vendedor", "fecha": "2026-07-10T10:02:00-05:00", "texto": "Hola! Está S/ 250 la sesión 😊" },
+   { "rol": "cliente", "fecha": "2026-07-10T10:10:00-05:00", "texto": "Uy, en otra clínica me cobran 180" },
+   { "rol": "vendedor", "fecha": "2026-07-10T10:12:00-05:00", "texto": "Podría dejártelo en 200 si vienes esta semana 🙌" },
+   { "rol": "cliente", "fecha": "2026-07-10T10:20:00-05:00", "texto": "Ya, resérvame el sábado" },
+   { "rol": "vendedor", "fecha": "2026-07-10T10:21:00-05:00", "texto": "Listo, agendado el sábado 11 am!" }
+  ],
+  "transiciones": [
+   { "de": "nuevo", "a": "oferta_presentada", "actor": "agent", "razonamiento": "El cliente pregunta el precio, lo que es señal de compra: pasa a oferta_presentada.", "mensaje_disparador": "Hola, ¿cuánto está el hollywood peel?", "fecha": "2026-07-10T10:00:30-05:00" },
+   { "de": "oferta_presentada", "a": "agendado", "actor": "agent", "razonamiento": "El cliente pidió reservar el sábado y el vendedor confirmó la cita.", "mensaje_disparador": "Ya, resérvame el sábado", "fecha": "2026-07-10T10:21:30-05:00" }
+  ],
+  "checks": {
+   "auditable": true,
+   "aprobado": false,
+   "puntaje_max": 4,
+   "etiquetas_debe": ["precio_en_frio", "precio_o_descuento_inventado", "cita_sin_adelanto"],
+   "error_critico_requerido": true,
+   "momento_critico_requerido": true,
+   "transicion_incorrecta_requerida": true
+  }
+ },
+ {
+  "id": 2,
+  "nombre": "Venta ejemplar de manual (valor → foto → oferta → filtro → adelanto) → aprobado alto",
+  "lead": {
+   "remote_jid": "51999100002@s.whatsapp.net",
+   "nombre": "Ana",
+   "estado": "agendado",
+   "servicio_interes": "Hollywood Peel",
+   "razon_perdido": null,
+   "notas": "Adelanto recibido. Cita sábado 25, 3 pm.",
+   "con_especialista": false,
+   "contador_noshow": 0,
+   "ultimo_emisor": "vendedor",
+   "ultimo_mensaje_at": "2026-07-22T16:40:00-05:00"
+  },
+  "historial": [
+   { "rol": "cliente", "fecha": "2026-07-22T15:00:00-05:00", "texto": "Hola, ¿cuánto cuesta el hollywood peel?" },
+   { "rol": "vendedor", "fecha": "2026-07-22T15:03:00-05:00", "texto": "¡Claro que sí! 😊 La inversión depende de lo que tu piel necesita — nuestro *Hollywood Peel* es un protocolo completo de 9 pasos con picoláser, no un peel simple.\n\n¿Me mandas una foto de tu rostro con buena luz? Te digo exactamente cuál sería tu plan y su inversión 📸" },
+   { "rol": "cliente", "fecha": "2026-07-22T15:10:00-05:00", "texto": "[foto] Ahí está, lo que más me molestan son las manchitas de las mejillas, ya me da roche salir sin base" },
+   { "rol": "vendedor", "fecha": "2026-07-22T15:15:00-05:00", "texto": "Gracias por la foto, Ana 😊 Lo que veo tiene solución y es justo lo que trabajamos — déjame armarte tu plan.\n\nTu plan para olvidarte de la base 👇\n✅ 3 sesiones de Hollywood Peel (protocolo de 9 pasos con picoláser)\n✅ Evaluación con nuestra especialista\n✅ Control de revisión incluido\n\nSuelto valdría ~S/ 590~ — tu pack queda en *S/ 450*.\n\nCon *S/ 50 de adelanto* por Yape o Plin te separo tu cita (se descuentan de tu tratamiento, o sea no pagas de más).\n¿Te acomoda más entre semana o sábado?" },
+   { "rol": "cliente", "fecha": "2026-07-22T16:00:00-05:00", "texto": "El sábado! Ya quiero empezar 😍" },
+   { "rol": "vendedor", "fecha": "2026-07-22T16:05:00-05:00", "texto": "¡Qué buena decisión! Antes de agendarte, para cuidarte 😊 ¿estás embarazada o dando de lactar? ¿Algún tratamiento médico en la piel ahorita?" },
+   { "rol": "cliente", "fecha": "2026-07-22T16:20:00-05:00", "texto": "No, nada de eso. Ya te mandé el yape de los 50 [captura]" },
+   { "rol": "vendedor", "fecha": "2026-07-22T16:40:00-05:00", "texto": "¡Confirmadísima tu cita, Ana! 🎉\n📅 Sábado 25, 3:00 pm\n📍 Av. Víctor Larco Herrera 877, Vista Alegre: https://maps.app.goo.gl/W2KsCi6KEDgV76rs9\n\nVen con la piel limpia, sin maquillaje, y evita sol directo el día previo. ¡Nos vemos!" }
+  ],
+  "checks": {
+   "auditable": true,
+   "aprobado": true,
+   "puntaje_min": 7,
+   "etiquetas_no_debe": ["precio_en_frio", "cita_sin_adelanto", "sin_filtro_contraindicaciones"],
+   "momento_critico_requerido": true,
+   "aciertos_min": 2
+  }
+ },
+ {
+  "id": 3,
+  "nombre": "Conversación de 2 mensajes sin respuesta → auditable=false",
+  "lead": {
+   "remote_jid": "51999100003@s.whatsapp.net",
+   "nombre": null,
+   "estado": "en_seguimiento",
+   "servicio_interes": "Depilación Láser",
+   "razon_perdido": null,
+   "notas": null,
+   "con_especialista": false,
+   "contador_noshow": 0,
+   "ultimo_emisor": "vendedor",
+   "ultimo_mensaje_at": "2026-07-20T09:05:00-05:00"
+  },
+  "historial": [
+   { "rol": "cliente", "fecha": "2026-07-20T09:00:00-05:00", "texto": "Hola, info del láser" },
+   { "rol": "vendedor", "fecha": "2026-07-20T09:05:00-05:00", "texto": "¡Hola! Claro que sí 😊 ¿Qué zonas te gustaría tratar? Te armo tu plan exacto" }
+  ],
+  "checks": {
+   "auditable": false
+  }
+ },
+ {
+  "id": 4,
+  "nombre": "Sobre-venta tras el sí: lead listo para agendar y el vendedor sigue vendiendo",
+  "lead": {
+   "remote_jid": "51999100004@s.whatsapp.net",
+   "nombre": "Karla",
+   "estado": "en_seguimiento",
+   "servicio_interes": "HIFU",
+   "razon_perdido": null,
+   "notas": "Se enfrió tras pedir horarios; nunca se le pidió el adelanto.",
+   "con_especialista": false,
+   "contador_noshow": 0,
+   "ultimo_emisor": "vendedor",
+   "ultimo_mensaje_at": "2026-07-18T13:00:00-05:00"
+  },
+  "historial": [
+   { "rol": "vendedor", "fecha": "2026-07-17T11:00:00-05:00", "texto": "Tu plan HIFU completo queda en *S/ 550* con evaluación y control incluidos. ¿Te acomoda más entre semana o sábado?" },
+   { "rol": "cliente", "fecha": "2026-07-17T11:10:00-05:00", "texto": "Ya me convenciste 😍 ¿qué horarios tienen el sábado?" },
+   { "rol": "vendedor", "fecha": "2026-07-17T11:15:00-05:00", "texto": "¡Genial! Mira, además el HIFU estimula tu propio colágeno, es tecnología focalizada de última generación, y muchas clientas ven cambios desde la primera sesión ✨ Te paso también unos antes y después para que veas los resultados" },
+   { "rol": "vendedor", "fecha": "2026-07-17T11:16:00-05:00", "texto": "[flyer antes/después] [flyer instalaciones] Y cuéntame, ¿hace cuánto notas la flacidez? ¿Has probado otros tratamientos antes?" },
+   { "rol": "cliente", "fecha": "2026-07-17T12:30:00-05:00", "texto": "Ah ya… luego te aviso, gracias" },
+   { "rol": "vendedor", "fecha": "2026-07-18T13:00:00-05:00", "texto": "Claro, cualquier cosa me escribes 😊" }
+  ],
+  "checks": {
+   "auditable": true,
+   "puntaje_max": 6,
+   "etiquetas_debe": ["sobre_venta_tras_si"],
+   "dimension_max": { "cierre_adelanto": 4 },
+   "momento_critico_requerido": true
+  }
+ },
+ {
+  "id": 5,
+  "nombre": "Contraindicación temporal (lactancia) manejada con cuidado → acierto, aprobado",
+  "lead": {
+   "remote_jid": "51999100005@s.whatsapp.net",
+   "nombre": "Rosa",
+   "estado": "descalificado",
+   "servicio_interes": "Ácido Tranexámico",
+   "razon_perdido": "lactancia",
+   "notas": "Recontactar en noviembre cuando termine la lactancia.",
+   "con_especialista": false,
+   "contador_noshow": 0,
+   "ultimo_emisor": "vendedor",
+   "ultimo_mensaje_at": "2026-07-15T17:20:00-05:00"
+  },
+  "historial": [
+   { "rol": "cliente", "fecha": "2026-07-15T17:00:00-05:00", "texto": "Hola, quiero tratarme las manchas del embarazo, me tienen harta" },
+   { "rol": "vendedor", "fecha": "2026-07-15T17:04:00-05:00", "texto": "Te entiendo, Rosa, y tiene solución 😊 Una consulta para cuidarte: ¿sigues dando de lactar?" },
+   { "rol": "cliente", "fecha": "2026-07-15T17:10:00-05:00", "texto": "Sí, creo que hasta noviembre" },
+   { "rol": "vendedor", "fecha": "2026-07-15T17:20:00-05:00", "texto": "¡Qué bueno que me lo cuentas! Durante la lactancia no aplicamos este tratamiento, para cuidarte a ti y a tu bebé 🤍\n\nCuando termines lo retomamos con todo. ¿Te parece si te guardo el dato y te escribo yo en noviembre?" }
+  ],
+  "checks": {
+   "auditable": true,
+   "aprobado": true,
+   "puntaje_min": 6,
+   "etiquetas_no_debe": ["sin_filtro_contraindicaciones"],
+   "aciertos_min": 1
+  }
+ },
+ {
+  "id": 6,
+  "nombre": "Contraindicación IGNORADA: embarazada y la agenda igual → reprobado crítico",
+  "lead": {
+   "remote_jid": "51999100006@s.whatsapp.net",
+   "nombre": null,
+   "estado": "agendado",
+   "servicio_interes": "Depilación Láser",
+   "razon_perdido": null,
+   "notas": "Cita martes 10 am, adelanto recibido.",
+   "con_especialista": false,
+   "contador_noshow": 0,
+   "ultimo_emisor": "vendedor",
+   "ultimo_mensaje_at": "2026-07-19T12:30:00-05:00"
+  },
+  "historial": [
+   { "rol": "cliente", "fecha": "2026-07-19T12:00:00-05:00", "texto": "Quiero depilación de piernas completas, ¿puedo aunque esté embarazada? Tengo 5 meses" },
+   { "rol": "vendedor", "fecha": "2026-07-19T12:05:00-05:00", "texto": "¡Claro! El pack de 6 sesiones de piernas completas está en *S/ 900*. ¿Cuándo te gustaría venir? 😊" },
+   { "rol": "cliente", "fecha": "2026-07-19T12:15:00-05:00", "texto": "El martes puedo. Te mando el yape [captura]" },
+   { "rol": "vendedor", "fecha": "2026-07-19T12:30:00-05:00", "texto": "¡Listo! Te espero el martes 10 am 🎉" }
+  ],
+  "checks": {
+   "auditable": true,
+   "aprobado": false,
+   "puntaje_max": 4,
+   "etiquetas_debe": ["sin_filtro_contraindicaciones"],
+   "error_critico_requerido": true
+  }
+ },
+ {
+  "id": 7,
+  "nombre": "'Está caro' → doble descuento + urgencia falsa + presión → reprobado",
+  "lead": {
+   "remote_jid": "51999100007@s.whatsapp.net",
+   "nombre": null,
+   "estado": "perdido",
+   "servicio_interes": "HIFU",
+   "razon_perdido": "precio",
+   "notas": "Dejó de responder tras la presión.",
+   "con_especialista": false,
+   "contador_noshow": 0,
+   "ultimo_emisor": "vendedor",
+   "ultimo_mensaje_at": "2026-07-14T20:10:00-05:00"
+  },
+  "historial": [
+   { "rol": "vendedor", "fecha": "2026-07-14T18:00:00-05:00", "texto": "Tu plan HIFU queda en *S/ 550* con evaluación incluida. ¿Entre semana o sábado?" },
+   { "rol": "cliente", "fecha": "2026-07-14T18:20:00-05:00", "texto": "Uy no, está muy caro para mí" },
+   { "rol": "vendedor", "fecha": "2026-07-14T18:22:00-05:00", "texto": "Te lo dejo en 480, pero solo si confirmas hoy" },
+   { "rol": "cliente", "fecha": "2026-07-14T19:00:00-05:00", "texto": "Mmm déjame pensarlo" },
+   { "rol": "vendedor", "fecha": "2026-07-14T19:05:00-05:00", "texto": "Mira, te hago un último precio: 430. Los cupos se acaban HOY, mañana vuelve a 550. ¿Sí o sí?" },
+   { "rol": "vendedor", "fecha": "2026-07-14T20:10:00-05:00", "texto": "¿Entonces? Se me acaban los cupos, avísame ya" }
+  ],
+  "checks": {
+   "auditable": true,
+   "aprobado": false,
+   "puntaje_max": 4,
+   "etiquetas_debe": ["precio_o_descuento_inventado", "objecion_mal_tratada"],
+   "error_critico_requerido": true,
+   "experto_alguno": ["01-zig-ziglar", "14-alex-hormozi", "07-chris-voss", "08-jordan-belfort", "11-jeremy-miner"]
+  }
+ },
+ {
+  "id": 8,
+  "nombre": "Baja no respetada: pide que no le escriban y el vendedor insiste → reprobado",
+  "lead": {
+   "remote_jid": "51999100008@s.whatsapp.net",
+   "nombre": null,
+   "estado": "baja",
+   "servicio_interes": "Limpieza Facial",
+   "razon_perdido": null,
+   "notas": "Pidió baja el 12/07.",
+   "con_especialista": false,
+   "contador_noshow": 0,
+   "ultimo_emisor": "vendedor",
+   "ultimo_mensaje_at": "2026-07-13T10:00:00-05:00"
+  },
+  "historial": [
+   { "rol": "vendedor", "fecha": "2026-07-12T09:00:00-05:00", "texto": "¡Hola! Esta semana tenemos promo en limpieza facial ✨ ¿Te animas?" },
+   { "rol": "cliente", "fecha": "2026-07-12T09:30:00-05:00", "texto": "Ya no me escribas más por favor" },
+   { "rol": "vendedor", "fecha": "2026-07-12T09:32:00-05:00", "texto": "¡Pero espera! Justo hoy tenemos 2x1, no te lo pierdas 😊" },
+   { "rol": "vendedor", "fecha": "2026-07-13T10:00:00-05:00", "texto": "¿Lo pensaste? La promo acaba hoy ⏰" }
+  ],
+  "checks": {
+   "auditable": true,
+   "aprobado": false,
+   "puntaje_max": 4,
+   "etiquetas_debe": ["no_respeto_baja"],
+   "error_critico_requerido": true
+  }
+ },
+ {
+  "id": 9,
+  "nombre": "BD desincronizada: estado=agendado sin adelanto visible, vendedor actuó bien → alerta_sistema",
+  "lead": {
+   "remote_jid": "51999100009@s.whatsapp.net",
+   "nombre": "María",
+   "estado": "agendado",
+   "servicio_interes": "Limpieza Facial",
+   "razon_perdido": null,
+   "notas": "Cita jueves 4 pm.",
+   "con_especialista": false,
+   "contador_noshow": 0,
+   "ultimo_emisor": "vendedor",
+   "ultimo_mensaje_at": "2026-07-21T15:10:00-05:00"
+  },
+  "historial": [
+   { "rol": "vendedor", "fecha": "2026-07-21T15:00:00-05:00", "texto": "Tu limpieza facial profunda queda en *S/ 90*. Tengo *jueves 4 pm* o *sábado 10 am*, ¿cuál te acomoda?\n\nCon S/ 50 de adelanto por Yape o Plin te la dejo separada (se descuentan de tu tratamiento 😊)" },
+   { "rol": "cliente", "fecha": "2026-07-21T15:05:00-05:00", "texto": "El jueves está bien, ahorita en la noche te mando el yape" },
+   { "rol": "vendedor", "fecha": "2026-07-21T15:10:00-05:00", "texto": "¡Perfecto, María! Apenas llegue tu yape te confirmo la cita del jueves 😊" }
+  ],
+  "transiciones": [
+   { "de": "nuevo", "a": "oferta_presentada", "actor": "agent", "razonamiento": "El vendedor envió propuesta concreta con precio, horarios y adelanto.", "mensaje_disparador": "El jueves está bien, ahorita en la noche te mando el yape", "fecha": "2026-07-21T15:06:00-05:00" },
+   { "de": "oferta_presentada", "a": "agendado", "actor": "user", "razonamiento": null, "mensaje_disparador": null, "fecha": "2026-07-21T16:00:00-05:00" }
+  ],
+  "checks": {
+   "auditable": true,
+   "aprobado": true,
+   "alerta_sistema_requerida": true,
+   "etiquetas_no_debe": ["cita_sin_adelanto"],
+   "transicion_incorrecta_requerida": true
+  }
+ },
+ {
+  "id": 10,
+  "nombre": "Calificada y abandonada: prometió el plan y desapareció 10 días → seguimiento_ausente",
+  "lead": {
+   "remote_jid": "51999100010@s.whatsapp.net",
+   "nombre": "Lucía",
+   "estado": "en_seguimiento",
+   "servicio_interes": "Depilación Láser",
+   "razon_perdido": null,
+   "notas": "Calificada; nunca se le mandó la oferta.",
+   "con_especialista": false,
+   "contador_noshow": 0,
+   "ultimo_emisor": "vendedor",
+   "ultimo_mensaje_at": "2026-07-12T11:30:00-05:00"
+  },
+  "historial": [
+   { "rol": "cliente", "fecha": "2026-07-12T11:00:00-05:00", "texto": "Quiero depilación de axilas y piernas, ya me cansé de la cera, cada mes es un martirio" },
+   { "rol": "vendedor", "fecha": "2026-07-12T11:05:00-05:00", "texto": "¡Te entiendo perfecto! 😊 Para cuidarte: ¿estás embarazada o dando de lactar? ¿Algún tratamiento en la piel?" },
+   { "rol": "cliente", "fecha": "2026-07-12T11:15:00-05:00", "texto": "No, nada. Dime cuánto sería que yo decido, quiero empezar este mes sí o sí" },
+   { "rol": "vendedor", "fecha": "2026-07-12T11:30:00-05:00", "texto": "¡Buenísimo! Ahorita te armo tu plan exacto de axilas + piernas y te lo paso 😊" }
+  ],
+  "checks": {
+   "auditable": true,
+   "puntaje_max": 6,
+   "etiquetas_debe": ["seguimiento_ausente"],
+   "dimension_max": { "seguimiento_ritmo": 4 },
+   "momento_critico_requerido": true
+  }
+ }
+]

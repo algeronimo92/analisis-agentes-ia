@@ -18,8 +18,10 @@ Base de conocimiento para crear prompts de venta por **WhatsApp** para la clíni
 - `prompts/` — prompts de producción de los agentes:
   - [Agente 1: Analista de leads](prompts/agente-analista-leads.md) — clasifica el estado y actualiza la BD (n8n)
   - [Agente 2: Copiloto de ventas](prompts/agente-copiloto-ventas.md) — genera las sugerencias de respuesta que ve el vendedor en el frontend (n8n + RAG)
+  - [Agente 3: Auditor de conversaciones](prompts/agente-auditor-conversaciones.md) — QA post-conversación: scorecard, momento crítico y coaching para el vendedor. Se usa desde Claude Code (subagente `.claude/agents/auditor-conversaciones.md`, que lee este archivo como rúbrica); el bloque n8n queda listo por si se automatiza. Es el único que usa `expertos/`
   - [Arquitectura del RAG](prompts/arquitectura-rag.md) — qué se indexa, qué va al prompt y qué a consulta exacta, con argumentos
-- `utils/` — fuentes y herramientas: [migración SQL de estados](utils/migracion-estados-leads.sql), [generador de chunks RAG](utils/generar_chunks_rag.py), sembrador de casos ([seed_tests.py](utils/seed_tests.py)) y los testers: [copiloto](utils/test_copiloto.py) (24 casos) y [analista](utils/test_analista.py) (19 casos de transiciones de estado)
+- `.claude/agents/` — subagentes de Claude Code: [auditor-conversaciones](.claude/agents/auditor-conversaciones.md) (ejecuta el Agente 3 en local), [experto-ia-n8n](.claude/agents/experto-ia-n8n.md) — consultor de prompts, workflows n8n, RAG y elección/costos de modelos de IA — y [experto-funnel-wsp](.claude/agents/experto-funnel-wsp.md) — consultor de diseño de funnels de venta por WhatsApp (audita estados, transiciones y métricas contra la BD real)
+- `utils/` — fuentes y herramientas: [migración SQL de estados](utils/migracion-estados-leads.sql), [generador de chunks RAG](utils/generar_chunks_rag.py), sembrador de casos ([seed_tests.py](utils/seed_tests.py)) y los testers: [copiloto](utils/test_copiloto.py) (24 casos), [analista](utils/test_analista.py) (30 casos de transiciones de estado) y [auditor](utils/test_auditor.py) (10 conversaciones completas con su auditoría esperada, 2 con auditoría de transiciones)
 
 ## Los 20 expertos: quién es quién y para qué usarlo
 

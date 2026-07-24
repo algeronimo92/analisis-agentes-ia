@@ -4,6 +4,8 @@ Complementa [[funnel-estados-leads]] (que define los estados) con las **reglas d
 
 **Principio rector (Rackham):** un lead cambia de estado solo con un **avance** — algo concreto que dijo o hizo (mandó foto, aceptó propuesta, dio fecha) — nunca porque "la conversación fue bien".
 
+**Y cada avance tiene DUEÑO:** la tabla maestra "QUIÉN ACTIVA CADA ESTADO" está en [[funnel-estados-leads]]. Las dos consecuencias que más se violan en la práctica (medidas en `lead_activity`): (1) el cliente NO puede autopresentarse la oferta — pedir precio o una promo jamás activa OFERTA PRESENTADA, eso exige la propuesta del VENDEDOR; (2) las transiciones por TIEMPO (silencio → SEGUIMIENTO, cadencia agotada → NUTRICIÓN) son del **cron** (`utils/cron-seguimiento.sql` vía webhook), nunca del LLM — un LLM no sabe calcular 24 horas.
+
 ---
 
 ## 1 · El caso n.º 1: "¿Cuánto cuesta?" de entrada
@@ -52,7 +54,7 @@ Todo "desde" o precio sale SIEMPRE de la herramienta 'precios' — nunca de memo
 |---|---|---|
 | Pregunta precio/info de un servicio | Valor + diferenciación + pre-evaluación (§1 — nunca la cifra en frío) | EN DIAGNÓSTICO |
 | "Quiero agendar X, ¿qué horarios tienen?" (comprador del 3 %) | NO forzar diagnóstico (Sandler: no vendas más allá de la venta). Solo filtro de contraindicaciones de la ficha + cierre alternativo + adelanto de S/ 50 | AGENDADO (fast-track) |
-| No responde en 24 h al primer intercambio | Primer toque de la cadencia | EN SEGUIMIENTO |
+| No responde en 24 h al primer intercambio | Primer toque de la cadencia | EN SEGUIMIENTO (lo marca el cron) |
 
 ### EN DIAGNÓSTICO → CALIFICADO
 El lead casi siempre llega con un **dolor, no con el nombre del tratamiento** ("tengo manchas", "quiero quitarme la papada") — para mapear su problema al servicio correcto y a la pregunta de afinación, usar [[mapa-dolores-soluciones]].
@@ -94,7 +96,7 @@ Reglas Hormozi: **nunca descuentes — agrega valor**; y guarda **1 elemento de 
 | Acepta fecha pero no manda el adelanto | Recordarlo con tacto ("con los S/ 50 queda separada tu cita — se descuentan de tu tratamiento 😊"); sin adelanto la cita NO existe | Sigue en OFERTA |
 | Adelanto de S/ 50 recibido | Confirmación con dirección + Maps + cuidados previos de la ficha | AGENDADO |
 | "Pero…" / "está caro" / "lo voy a pensar" / "le pregunto a mi esposo" | Proceso de 5 pasos del [[playbook-objeciones]] | EN OBJECIÓN |
-| Visto sin respuesta 24-48 h | Toque 1 de cadencia (con valor nuevo, nunca "¿viste mi mensaje?") | EN SEGUIMIENTO |
+| Visto sin respuesta 24-48 h | Toque 1 de cadencia (con valor nuevo, nunca "¿viste mi mensaje?") | EN SEGUIMIENTO (lo marca el cron) |
 
 ### EN OBJECIÓN → …
 - Máximo **2-3 loops** (Belfort): validar → aislar → re-presentar valor nuevo → re-cerrar.

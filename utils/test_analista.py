@@ -41,6 +41,14 @@ def validar(caso, r):
     # --- estructura y tipos ---
     if "razonamiento" not in r and not r.get("_desde_bd"):
         fallos.append("falta 'razonamiento' (debe generarse PRIMERO)")
+    if not r.get("_desde_bd"):
+        # el parser exige las 11 claves (todas nullable salvo razonamiento/estado/con_especialista)
+        CLAVES = ("razonamiento", "nombre", "telefono", "estado", "tipo_objecion",
+                  "servicio_interes", "razon_perdido", "fecha_recontacto",
+                  "proxima_cita", "con_especialista", "notas")
+        faltan = [k for k in CLAVES if k not in r]
+        if faltan:
+            fallos.append(f"faltan claves del formato de salida: {faltan}")
     if estado not in ESTADOS_VALIDOS:
         fallos.append(f"estado inválido o con tilde/mayúsculas: {estado!r}")
     if estado != "en_objecion" and r.get("tipo_objecion") is not None:
@@ -62,6 +70,8 @@ def validar(caso, r):
         fallos.append(f"tipo_objecion={r.get('tipo_objecion')!r} (esperado {ch['tipo_objecion_esperado']!r})")
     if ch.get("proxima_cita_requerida") and not r.get("proxima_cita"):
         fallos.append("proxima_cita vino null (había cita con día+hora y adelanto confirmado)")
+    if ch.get("proxima_cita_prohibida") and r.get("proxima_cita"):
+        fallos.append(f"proxima_cita={r.get('proxima_cita')!r} fabricada (no había cita con adelanto confirmado)")
     if ch.get("razon_requerida") and not r.get("razon_perdido"):
         fallos.append("razon_perdido vino null y era obligatoria")
     if "fecha_recontacto_contiene" in ch and ch["fecha_recontacto_contiene"] not in str(r.get("fecha_recontacto", "")):
@@ -147,7 +157,9 @@ def main():
             r["_desde_bd"] = True
         # si el webhook no devuelve la clasificación, leerla de la BD (la verdad final)
         plano = r.get("output", r) if isinstance(r, dict) else {}
-        if not plano.get("estado") and os.environ.get("PG_HOST"):
+        # La respuesta del webhook trae la fila ANTES de que el estado llegue por
+        # POST /webhooks/lead-stage: con BD disponible, la verdad final se lee SIEMPRE de la BD.
+        if os.environ.get("PG_HOST"):
             import time
             import pg8000.native as pg
             con = pg.Connection(os.environ.get("PG_USER", "postgres"), host=os.environ["PG_HOST"],
@@ -161,6 +173,17 @@ def main():
                                "updated_at FROM leads WHERE remote_jid = :jid", jid=jid)
                 if fila and (marca_previa is None or fila[0][10] != marca_previa):
                     break
+            if fila and (marca_previa is None or fila[0][10] != marca_previa):
+                # el UPDATE de campos y el cambio de estado llegan por vías separadas
+                # (POST /webhooks/lead-stage): sondear hasta que el estado asiente.
+                # Si el caso espera MANTENER el estado, se paga la espera completa.
+                for _ in range(8):
+                    time.sleep(5)
+                    fila = con.run("SELECT estado, tipo_objecion, servicio_interes, nombre, telefono, "
+                                   "razon_perdido, fecha_recontacto, proxima_cita, con_especialista, notas, "
+                                   "updated_at FROM leads WHERE remote_jid = :jid", jid=jid)
+                    if fila and str(fila[0][0]) != caso["lead"]["estado"]:
+                        break
             con.close()
             if fila:
                 f = fila[0]
