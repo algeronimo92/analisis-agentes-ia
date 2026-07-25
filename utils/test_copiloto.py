@@ -31,6 +31,35 @@ EMOJIS_TONO = "😊🙂✨🌟🤍🎉"
 EMOJIS_FUNCIONALES = "✅📸👇📅📍⏰🧴💧💆"
 EMOJIS_PROHIBIDOS = "💚❤️💕💖🎀🫧🧸😘😉🥳😂🙌😄💪🙏😔🔥📌🎯👌"
 
+CATALOGO_URL = "https://dermicapro.app/api/public/catalog"
+
+
+def precios_del_catalogo():
+    """Precios vigentes del catálogo (la MISMA fuente que usa la tool 'precios').
+
+    Sin esto el tester solo comprueba que aparezca 'S/', no que la cifra sea real:
+    un modelo que no llame a la tool e invente 'S/ 350' pasaría los 40 casos. Es el
+    fallo más caro del sistema (cotizar mal), así que se valida contra la fuente.
+    """
+    try:
+        with urllib.request.urlopen(CATALOGO_URL, timeout=30) as r:
+            data = json.loads(r.read())
+    except Exception as e:
+        print(f"⚠️  no se pudo leer el catálogo ({e}): las cifras NO se validarán")
+        return None
+    items = data.get("data", data if isinstance(data, list) else [])
+    precios = set()
+    for it in items:
+        for p in it.get("packages", []):
+            if p.get("price") is not None:
+                precios.add(int(float(p["price"])))
+    # el adelanto/consulta es una constante operativa del prompt, no del catálogo
+    precios.add(50)
+    return precios or None
+
+
+PRECIOS_VALIDOS = precios_del_catalogo()
+
 
 def validar(caso, respuesta):
     """Devuelve lista de fallos (vacía = PASS)."""
@@ -88,6 +117,31 @@ def validar(caso, respuesta):
                 fallos.append("el precio aparece al INICIO del mensaje (debe ir al final, tras la pila de valor)")
     if ch.get("termina_en_pregunta") and textos and not any(t.rstrip().rstrip("*_ ").endswith("?") for t in textos):
         fallos.append("ninguna sugerencia termina en pregunta")
+
+    # --- CIFRAS INVENTADAS: toda cifra cotizada debe existir en el catálogo real ---
+    # (detecta que el agente NO llamó a la tool 'precios' y alucinó el número).
+    # NO se validan las ANCLAS (~S/ 540~): el prompt pide mostrar lo que valdría
+    # suelto, que es un cálculo (n sesiones × precio unitario) y no un ítem del
+    # catálogo. Por eso se saltan las cifras tachadas y se aceptan los múltiplos.
+    if PRECIOS_VALIDOS:
+        for i, t in enumerate(textos, 1):
+            tachados = {m.group(1) for m in re.finditer(r"~[^~]*S/\s?(\d[\d.,]*)[^~]*~", t)}
+            for m in re.finditer(r"S/\s?(\d[\d.,]*)", t):
+                crudo = m.group(1)
+                if crudo in tachados:
+                    continue  # es un ancla tachada, no una cotización
+                try:
+                    cifra = int(float(crudo.replace(",", "")))
+                except ValueError:
+                    continue
+                if cifra in PRECIOS_VALIDOS:
+                    continue
+                # ancla sin tachar: n sesiones × un precio del catálogo (n de 2 a 12)
+                if any(cifra % p == 0 and 2 <= cifra // p <= 12 for p in PRECIOS_VALIDOS if p):
+                    continue
+                fallos.append(
+                    f"sugerencia {i}: cifra INVENTADA 'S/ {cifra}' — no existe en el catálogo "
+                    f"(¿no llamó a la tool 'precios'?)")
 
     # --- Reglas globales de formato (aplican a TODOS los casos) ---
     for i, t in enumerate(textos, 1):
