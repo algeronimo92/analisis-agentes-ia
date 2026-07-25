@@ -94,16 +94,27 @@ def validar(caso, respuesta):
         if "**" in t:
             fallos.append(f"sugerencia {i}: negrita markdown ** (WhatsApp usa UN asterisco)")
         tono = [c for c in t if c in EMOJIS_TONO]
-        if len(tono) > 2:
-            fallos.append(f"sugerencia {i}: {len(tono)} emojis de tono (máximo 1-2)")
+        if len(tono) > 1:
+            fallos.append(f"sugerencia {i}: {len(tono)} emojis de tono (máximo 1)")
+        if re.search(r"S/\s?\d[\d.,]*\s?[" + EMOJIS_TONO + EMOJIS_FUNCIONALES + "]", t):
+            fallos.append(f"sugerencia {i}: emoji pegado a la cifra del precio (el precio va limpio)")
         prohibidos = [c for c in t if c in EMOJIS_PROHIBIDOS]
         if prohibidos:
             fallos.append(f"sugerencia {i}: emojis fuera de paleta {prohibidos}")
+    ids_recursos = {r["id"] for r in caso.get("recursos", [])}
+    algun_adjunto = False
     for s in sugerencias:
-        # (los adjuntos no se validan aquí: el nodo 'flyers' del flujo real inyecta
-        #  recursos de media_assets que el caso de prueba no conoce)
         if s.get("canal") not in ("texto", "audio", None):
             fallos.append(f"canal inválido: {s.get('canal')}")
+        adjuntos = s.get("adjuntos") or []
+        algun_adjunto = algun_adjunto or bool(adjuntos)
+        # (si el caso no define recursos, los adjuntos no se validan: el nodo 'flyers'
+        #  del flujo real inyecta recursos de media_assets que el caso no conoce)
+        for a in adjuntos:
+            if ids_recursos and a not in ids_recursos:
+                fallos.append(f"adjunto '{a}' no existe en recursos_disponibles del caso")
+    if ch.get("debe_adjuntar") and not algun_adjunto:
+        fallos.append("se esperaba al menos un adjunto de recursos_disponibles y no vino ninguno")
 
     return fallos, alerta
 
@@ -111,6 +122,8 @@ def validar(caso, respuesta):
 def payload_de(caso):
     lead = dict(caso["lead"])
     lead["ultimo_mensaje_at"] = "2026-07-21T10:00:00-05:00"
+    lead["horas_desde_ultimo_mensaje"] = caso.get("antiguedad_horas", 1)
+    lead["indicacion_vendedor"] = caso.get("indicacion_vendedor", "")
     lead["recursos"] = caso.get("recursos", [])
     lead["data"] = caso["historial"]
     return lead
@@ -152,8 +165,13 @@ def main():
     aprobados = 0
     for caso in CASOS:
         jid = caso["lead"]["remote_jid"].split("@")[0] + "@s.whatsapp.net"
+        # La indicación del vendedor es una entrada del frontend por generación (no vive
+        # en la BD): el webhook del flujo la recibe como query param 'instruction'.
+        params = {"chat_id": jid}
+        if caso.get("indicacion_vendedor"):
+            params["instruction"] = caso["indicacion_vendedor"]
         try:
-            with urllib.request.urlopen(url + "?chat_id=" + urllib.parse.quote(jid), timeout=180) as r:
+            with urllib.request.urlopen(url + "?" + urllib.parse.urlencode(params), timeout=180) as r:
                 respuesta = json.loads(r.read())
         except Exception as e:
             reportar(caso, [f"error llamando al webhook: {e}"], None)
