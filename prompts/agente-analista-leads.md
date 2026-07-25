@@ -238,11 +238,53 @@ Analiza y devuelve el JSON según tu formato de salida.
   Query Parameter: `{{ $json.query.chat_id }}`. Ordenar por `sent_at` (hora real de envío), NO `created_at`: los mensajes con media tienen `created_at` retrasado por el procesamiento del archivo y quedarían fuera de orden respecto al texto cercano. Tras aplicarlo, re-correr `utils/test_analista.py` (antes clasificaba sobre historial barajado; ahora lo ve ordenado y el comportamiento puede cambiar/mejorar).
 - **USER PROMPT (versión n8n actual):** el historial viene de `$('Merge1').item.json.data` con "más nuevo arriba" (ya coherente con el `ORDER BY sent_at DESC` de arriba). VERIFICAR en una ejecución real que `$json` (el `<lead>`) NO contenga también `data` — si lo trae, proyectar el lead sin ese campo en un nodo Set previo: duplicar la conversación en `<lead>` + `<historial>` dobla los tokens variables. Se eliminó `ultimo_mensaje_at` del prompt a propósito (era la materia prima del bug de las "24 h" alucinadas): no volver a agregarlo.
 - **Guardarraíles del flujo que el prompt NO puede dar** (recomendaciones de la auditoría `auditorias/auditoria-prompt-analista.md`):
-  1. Anti-aleteo: agrupar ráfagas de mensajes por `remote_jid` (buffer + Wait) y concurrencia 1 por chat; en el webhook, no-op si `estado_nuevo == estado_actual`.
+  1. Anti-aleteo: agrupar ráfagas por `remote_jid` (ver BUFFER ANTI-RÁFAGAS abajo) y concurrencia 1 por chat; en el webhook, no-op si `estado_nuevo == estado_actual`.
   2. El webhook debería validar también la MATRIZ de transiciones (rechazar/alertar `nuevo→oferta_presentada`, retrocesos, y salidas de `baja` con actor agent sin cita de opt-in) — la defensa no puede vivir solo en el prompt.
   3. Dedupe por id de mensaje (Evolution API duplica webhooks).
   4. JSON inválido del modelo: retry/auto-fix del parser; en fallo definitivo NO escribir nada (jamás un estado por defecto).
   5. Carrera cron vs. agente: al recibir la transición del cron, el backend revalida que `ultimo_emisor` siga siendo `vendedor`.
   6. El flujo de recordatorios/no-show es quien emite `agendado → en_seguimiento` tras 2.ª inasistencia (vía webhook) — ni este prompt ni el cron de silencio lo cubren.
-- **Prompt caching:** el SYSTEM (~4.4k tokens) es idéntico en cada llamada — activar caché de prompt en el nodo del modelo si el proveedor lo soporta; paga con creces el crecimiento del parche.
+- **Prompt caching:** el SYSTEM (~4.4k tokens) es idéntico en cada llamada — activar caché de prompt en el nodo del modelo si el proveedor lo soporta; paga con creces el crecimiento del parche. Gemini usa caché implícita automática por prefijo (no hay campo "cache key").
+- **Modelo en producción: `models/gemini-2.5-flash`** (nodo Google Gemini Chat Model). Config obligatoria del nodo, en este orden de importancia:
+  1. **Safety Settings en `BLOCK_NONE` para las CUATRO categorías** (`SEXUALLY_EXPLICIT`, `DANGEROUS_CONTENT`, `HARASSMENT`, `HATE_SPEECH`). Sin esto, los filtros bloquean mensajes legítimos sobre lactancia, depilación íntima, isotretinoína o anticoagulantes → no llega JSON → clasificación perdida en silencio. Es seguro desactivarlos: este agente no le escribe a nadie, solo emite el estado del lead.
+  2. **Maximum Number of Tokens: 4000** — los thinking tokens descuentan del presupuesto de salida; un JSON truncado = clasificación perdida (ver regla 4 de guardarraíles).
+  3. **Sampling Temperature: 0** — Gemini sí la acepta (los razonadores de OpenAI no), y conserva el near-determinismo.
+  4. Top K / Top P: no tocar. Timeout y Max Retries no existen en este nodo: van en su pestaña **Settings** (*Retry On Fail*, Max Tries 2).
+  5. El nodo NO expone thinking budget; 2.5 Flash trae thinking dinámico por defecto, que es justo lo que resuelve el caso 31.
+
+## BUFFER ANTI-RÁFAGAS (pendiente de implementar — mayor retorno del sistema)
+
+**Medición real (25-jul-2026, 8.938 mensajes de 7 días, 630 chats):** el flujo clasifica cada mensaje por separado, pero más de la mitad llegan en ráfaga (el vendedor manda flyer + imagen + audio; el cliente manda foto + "ahí te la mandé"). Agrupando por chat:
+
+| Ventana | Invocaciones/mes | Ahorro |
+|---|---|---|
+| sin buffer (hoy) | 38.700 | — |
+| 30 s | 18.200 | 53 % |
+| **60 s** | **16.300** | **58 %** |
+| 120 s | 13.000 | 66 % |
+
+No es solo costo: **mejora la clasificación**, porque el agente ve el turno completo en vez de decidir sobre cada fragmento suelto (hoy la oferta en texto y su imagen se clasifican por separado). Y elimina el aleteo A→B→A que la tabla maestra de [[funnel-estados-leads]] marca como "clasificador roto".
+
+**Diseño (debounce de cola en n8n):**
+1. El Webhook recibe el mensaje y guarda su `wa_message_id`/`id` como disparador de esta ejecución.
+2. Nodo **Wait 60 s**.
+3. Tras el Wait, consulta el último mensaje del chat: `SELECT id FROM wsp_messages WHERE chat_id = $1 ORDER BY sent_at DESC LIMIT 1`.
+4. Nodo **IF**: continuar SOLO si ese id es el que disparó esta ejecución. Si llegó uno más nuevo, esta ejecución termina sin clasificar (la del mensaje nuevo se encarga del turno completo).
+5. Del IF en adelante, el flujo actual sin cambios.
+
+**Trade-off:** el estado se actualiza hasta 60 s más tarde; si el vendedor pide sugerencias en esa ventana, el copiloto lee un estado viejo (mitigado por su paso 4, que detecta el desfase y lo reporta en `alerta`). Por eso 30-60 s y no 120: casi todo el ahorro está en los primeros 30 s.
+
+**Costo mensual del analista según modelo y buffer** (precios verificados 25-jul-2026; fórmula `[4400×P_cached + 1750×P_in + (250+thinking)×P_out] × llamadas`):
+
+| Modelo | sin buffer | con buffer 60 s |
+|---|---|---|
+| gpt-4o-mini (anterior; fallaba el caso 31 ~35 %) | $28 | $12 |
+| **Gemini 2.5 Flash (EN PRODUCCIÓN desde 25-jul)** | $68 | **$29** |
+| Gemini 3 Flash (Preview — no usar en prod) | $93 | $40 |
+| Gemini 3.6 Flash (GA, thinking low) | $309 | $133 |
+| gpt-5.6-luna low | $208 | $89 |
+| Claude Haiku 4.5 | $130-280 | $56-120 |
+
+Descartadas las APIs chinas (DeepSeek/Qwen, $5-12/mes): ahorran ~$20/mes frente a Gemini, pero el español es su punto débil (es el corazón de esta tarea), no dan zero-retention contractual, y las conversaciones traen datos de salud de pacientes — sensibles bajo la Ley 29733. Servir esos mismos modelos de pesos abiertos en hosts occidentales (Fireworks/DeepInfra) cuesta MÁS que Gemini ($62-141) porque no ofrecen prompt caching.
 - **Sesgo medido y parchado (25-jul-2026):** en 5 corridas de `test_analista.py`, el caso 6 ("resérvame el sábado a las 11" sin pago) falló 4/5 emitiendo `agendado` — la regla textual existía pero el día+hora concretos la pisaban. Fix: paso 5 CANDADO DE AGENDADO (el razonamiento debe CITAR la evidencia de pago) + Ejemplos 13 y 14 (los dos disparadores exactos). Validado en 10 corridas: casos 3, 6 y 7 en 10/10. Efecto secundario detectado en esas mismas corridas: el candado generalizó "mantener" y los casos 31 (reactivación con oferta → oferta_presentada) y 9 (asistió → cliente_activo) empezaron a fallar por NO avanzar (6/10 y 8/10) — se agregó la línea de contrapeso al final del paso 5 ("aplica SOLO a agendado; con evidencia de avance, AVANZA"). Si el caso 7 falla en el futuro, el candado quedó demasiado agresivo.
+- **Cambio de modelo validado (25-jul-2026):** el caso 31 quedaba al 65 % con `gpt-4o-mini` PESE a tener regla, Ejemplo 11 textual y línea de contrapeso — era límite de capacidad del modelo, no del prompt (un problema de atención: sostener la regla frente a la inercia del estado actual). Migrado a `gemini-2.5-flash`: validación de 59 clasificaciones **sin un solo fallo** — suite completa 30/30, caso 31 **20/20** (antes 13/20), candado de agendado 9/9 (casos 3, 6 y 7). El prompt no se tocó en esta migración.
