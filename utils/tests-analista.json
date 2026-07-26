@@ -900,5 +900,124 @@
     "en_diagnostico"
    ]
   }
+ },
+ {
+  "id": 32,
+  "nombre": "TRAMPA · PROMESA de pago ('más tardecito yapeo') → NO es agendado (caso real 51964202286)",
+  "lead": {
+   "remote_jid": "51888000032@s.whatsapp.net",
+   "nombre": null,
+   "estado": "en_seguimiento",
+   "tipo_objecion": null,
+   "servicio_interes": "HIFU",
+   "con_especialista": false,
+   "contador_noshow": 0,
+   "proxima_cita": null,
+   "notas": "Tiene la oferta (promo HIFU S/ 400); pidió retomar y se le enviaron los datos de pago.",
+   "ultimo_emisor": "cliente"
+  },
+  "historial": [
+   {
+    "rol": "vendedor",
+    "texto": "Estamos en promoción de 700 soles a 400 soles 🤩 Puede separar su cupo con tan solo 50 soles"
+   },
+   {
+    "rol": "vendedor",
+    "texto": "¡Para separar su cita, *se requiere un adelanto de 50 soles POR PERSONA*! 😊\n*• BCP 5707349868063*\n*• YAPE al 974637783*\n📷*Nos envía la captura para confirmar su cita.*📝"
+   },
+   {
+    "rol": "cliente",
+    "texto": "Esta bien, más tardecito yapeo por favor"
+   }
+  ],
+  "checks": {
+   "estado_esperado": "oferta_presentada",
+   "estado_prohibido": [
+    "agendado"
+   ],
+   "proxima_cita_prohibida": true
+  }
+ },
+ {
+  "id": 33,
+  "nombre": "TRAMPA · responde el MÉTODO ('Por yape') → NO es agendado (caso real 51970947643)",
+  "lead": {
+   "remote_jid": "51888000033@s.whatsapp.net",
+   "nombre": "Maria Vargas",
+   "estado": "oferta_presentada",
+   "tipo_objecion": null,
+   "servicio_interes": "HIFU",
+   "con_especialista": false,
+   "contador_noshow": 0,
+   "proxima_cita": null,
+   "notas": "Oferta enviada (promo HIFU S/ 400); se le ofrecieron horarios y los datos de pago.",
+   "ultimo_emisor": "cliente"
+  },
+  "historial": [
+   {
+    "rol": "vendedor",
+    "texto": "Para el lunes entonces ?"
+   },
+   {
+    "rol": "vendedor",
+    "texto": "¡Para separar su cita, *se requiere un adelanto de 50 soles POR PERSONA*! 😊\n*• BCP 5707349868063*\n*• YAPE al 974637783*\n📷*Nos envía la captura para confirmar su cita.*📝"
+   },
+   {
+    "rol": "cliente",
+    "texto": "Por yape"
+   }
+  ],
+  "checks": {
+   "estado_esperado": "oferta_presentada",
+   "estado_prohibido": [
+    "agendado"
+   ],
+   "proxima_cita_prohibida": true
+  }
+ },
+ {
+  "id": 34,
+  "nombre": "TRAMPA · da FECHA de cita sin oferta ni pago → NO deducir el adelanto (caso real 51976328090)",
+  "lead": {
+   "remote_jid": "51888000034@s.whatsapp.net",
+   "nombre": "Alexandra Galarreta Muñoz",
+   "estado": "en_diagnostico",
+   "tipo_objecion": null,
+   "servicio_interes": "HIFU",
+   "con_especialista": false,
+   "contador_noshow": 0,
+   "proxima_cita": null,
+   "notas": "Envió su foto para la pre-evaluación; viaja a Trujillo el 1 de agosto.",
+   "ultimo_emisor": "cliente"
+  },
+  "historial": [
+   {
+    "rol": "vendedor",
+    "texto": "*¡Tu lifting facial está a solo un paso!* 🌟 ¿*Qué esperas* para ver la transformación que deseas?"
+   },
+   {
+    "rol": "cliente",
+    "texto": "El lunes por favor"
+   },
+   {
+    "rol": "cliente",
+    "texto": "Si o si voy"
+   },
+   {
+    "rol": "cliente",
+    "texto": "Listo el lunes a las 11 am porfavir"
+   },
+   {
+    "rol": "cliente",
+    "texto": "Lunes 3 de agosto"
+   }
+  ],
+  "checks": {
+   "estado_prohibido": [
+    "agendado",
+    "oferta_presentada"
+   ],
+   "proxima_cita_prohibida": true
+  }
  }
 ]
